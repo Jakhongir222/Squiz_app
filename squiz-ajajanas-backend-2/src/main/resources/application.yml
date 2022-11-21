@@ -1,0 +1,28 @@
+debug: true
+server:
+  port:
+spring:
+  sql:
+    init:
+      platform: postgresql
+      mode: always
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    driver-class-name:
+    url: jdbc:postgresql://mouse.db.elephantsql.com/hdghuuls
+    username: hdghuuls
+    password: 1tHEMfnjY7Q_WCS_zDCWV3fz4OWFyYg-
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
