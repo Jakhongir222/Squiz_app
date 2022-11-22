@@ -20,6 +20,14 @@ public class WrongAnswer {
     @Column(name = "answer")
     private String wrongAnswer;
 
+    public WrongAnswer(String answerId, String wrongAnswer) {
+        this.answerId = answerId;
+        this.wrongAnswer = wrongAnswer;
+    }
+
+    public WrongAnswer() {
+    }
+
     public String getAnswerId() {
         return answerId;
     }

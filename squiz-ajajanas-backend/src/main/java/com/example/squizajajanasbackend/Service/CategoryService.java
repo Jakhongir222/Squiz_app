@@ -1,4 +1,4 @@
-package com.example.squizajajanasbackend.Service;
+package com.example.squizajajanasbackend.service;
 
 import com.example.squizajajanasbackend.model.Category;
 import com.example.squizajajanasbackend.repository.CategoryRepo;
@@ -14,7 +14,6 @@ public class CategoryService {
 
     public Object getCategory(String categoryId) {
         return repo.getCategoryById(categoryId);
-
     }
 
     public List<Category> getAllCategories() {

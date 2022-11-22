@@ -20,9 +20,20 @@ public class Category {
     @Column(name = "category_name")
     private String categoryName;
 
+
+
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "category_id")
     private List<Question> questions;
+
+    public Category() {
+    }
+
+    public Category(String categoryId, String categoryName, List<Question> questions) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.questions = questions;
+    }
 
     public String getCategoryId() {
         return categoryId;

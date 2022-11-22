@@ -16,9 +16,17 @@ public class CorrectAnswer {
             strategy = "uuid"
     )
     @Column(name = "correct_answer_id", nullable = false)
-    private String correctAnswerId = UUID.randomUUID().toString();
+    private String correctAnswerId ;
     @Column(name = "correct_answer")
     private String correctAnswer;
+
+    public CorrectAnswer(String correctAnswerId, String correctAnswer) {
+        this.correctAnswerId = correctAnswerId;
+        this.correctAnswer = correctAnswer;
+    }
+
+    public CorrectAnswer() {
+    }
 
     public String getCorrectAnswerId() {
         return correctAnswerId;

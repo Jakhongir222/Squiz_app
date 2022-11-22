@@ -25,9 +25,19 @@ public class Question {
     @OneToMany(cascade=CascadeType.ALL)
     private List<WrongAnswer> wrongAnswers;
 
-    @JoinColumn(name = "correct_answer")
+
     @OneToOne
-    private CorrectAnswer correctAnswer;
+     private CorrectAnswer correctAnswer;
+
+public Question(String questionId, String question, List<WrongAnswer> wrongAnswers, CorrectAnswer correctAnswer) {
+        this.questionId = questionId;
+        this.question = question;
+        this.wrongAnswers = wrongAnswers;
+        this.correctAnswer = correctAnswer;
+    }
+
+    public Question() {
+    }
 
     public String getQuestionId() {
         return questionId;

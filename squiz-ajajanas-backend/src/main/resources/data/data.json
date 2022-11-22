@@ -1,0 +1,10 @@
+{
+  "category": "geography",
+  "question": "What is the name of the second tallest mountain in the world?",
+  "answer": "K2",
+  "wrong_answers": [
+        "Chimyon",
+        "Kabenekase",
+        "Everest"
+      ]
+}
