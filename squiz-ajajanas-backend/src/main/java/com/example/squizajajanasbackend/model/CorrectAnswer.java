@@ -16,7 +16,7 @@ public class CorrectAnswer {
             strategy = "uuid"
     )
     @Column(name = "correct_answer_id", nullable = false)
-    private String correctAnswerId ;
+    private String correctAnswerId;
     @Column(name = "correct_answer")
     private String correctAnswer;
 

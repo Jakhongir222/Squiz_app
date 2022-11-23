@@ -25,8 +25,8 @@ public class Question {
     @OneToMany(cascade=CascadeType.ALL)
     private List<WrongAnswer> wrongAnswers;
 
-
-    @OneToOne
+    @JoinColumn(name="question_id")
+    @OneToOne(cascade = CascadeType.ALL)
      private CorrectAnswer correctAnswer;
 
 public Question(String questionId, String question, List<WrongAnswer> wrongAnswers, CorrectAnswer correctAnswer) {

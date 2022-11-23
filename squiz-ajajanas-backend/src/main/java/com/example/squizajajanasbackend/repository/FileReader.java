@@ -56,12 +56,12 @@ public class FileReader {
 
         Category category = new Category(categoryId, dto.category(), questionList);
 
-        System.out.println("====================================================");
-        System.out.println(repo.getCategoryById("2"));
+//        System.out.println("====================================================");
+//        System.out.println(repo.getCategoryById("2"));
         repo.saveCategory(category);
-
-        System.out.println(category.getCategoryName());
-        System.out.println(question.getQuestion());
-        System.out.println(question.getCorrectAnswer());
+//
+//        System.out.println(category.getCategoryName());
+//        System.out.println(question.getQuestion());
+//        System.out.println(question.getCorrectAnswer());
     }
 }
