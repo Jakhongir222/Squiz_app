@@ -23,17 +23,13 @@ public class Question {
 
     @JoinColumn(name="question_id")
     @OneToMany(cascade=CascadeType.ALL)
-    private List<WrongAnswer> wrongAnswers;
+    private List<Answer> answers;
 
-    @JoinColumn(name="question_id")
-    @OneToOne(cascade = CascadeType.ALL)
-     private CorrectAnswer correctAnswer;
 
-public Question(String questionId, String question, List<WrongAnswer> wrongAnswers, CorrectAnswer correctAnswer) {
+public Question(String questionId, String question, List<Answer> answers) {
         this.questionId = questionId;
         this.question = question;
-        this.wrongAnswers = wrongAnswers;
-        this.correctAnswer = correctAnswer;
+        this.answers = answers;
     }
 
     public Question() {
@@ -55,19 +51,12 @@ public Question(String questionId, String question, List<WrongAnswer> wrongAnswe
         this.question = question;
     }
 
-    public List<WrongAnswer> getWrongAnswers() {
-        return wrongAnswers;
+    public List<Answer> getWrongAnswers() {
+        return answers;
     }
 
-    public void setWrongAnswers(List<WrongAnswer> wrongAnswers) {
-        this.wrongAnswers = wrongAnswers;
+    public void setWrongAnswers(List<Answer> answers) {
+        this.answers = answers;
     }
 
-    public CorrectAnswer getCorrectAnswer() {
-        return correctAnswer;
-    }
-
-    public void setCorrectAnswer(CorrectAnswer correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }
 }

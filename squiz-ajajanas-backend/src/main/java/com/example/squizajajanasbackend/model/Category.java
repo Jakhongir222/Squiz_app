@@ -20,8 +20,6 @@ public class Category {
     @Column(name = "category_name")
     private String categoryName;
 
-
-
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "category_id")
     private List<Question> questions;

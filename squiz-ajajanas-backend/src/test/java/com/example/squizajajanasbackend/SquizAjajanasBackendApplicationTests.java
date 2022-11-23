@@ -1,6 +1,6 @@
 package com.example.squizajajanasbackend;
 
-import com.example.squizajajanasbackend.repository.FileReader;
+import com.example.squizajajanasbackend.repository.FailReader;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SquizAjajanasBackendApplicationTests {
 
     @Autowired
-    FileReader fr;
+    FailReader fr;
 
     @Test
     void contextLoads() {

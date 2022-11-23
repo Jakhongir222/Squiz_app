@@ -1,10 +1,45 @@
-{
-  "category": "geography",
-  "question": "What is the name of the second tallest mountain in the world?",
-  "answer": "K2",
-  "wrong_answers": [
-        "Chimyon",
-        "Kabenekase",
-        "Everest"
-      ]
-}
+[
+  {
+    "category": "geography",
+    "question": "What is the name of the second tallest mountain in the world?",
+    "answers": [
+      "K2",
+      "Chimyon",
+      "Kabenekase",
+      "Everest"
+    ]
+  },
+
+  {
+    "category": "geography",
+    "question": "What is the biggest fjord in Norway?",
+    "answers": [
+      "Sognefjorden",
+      "Geirdangerfjorden",
+      "Oslofjorden",
+      "Jakhongirfjorden"
+    ]
+  },
+  {
+    "category": "geography",
+    "question": "Just another test question",
+    "answers": [
+      "njbcdjheb",
+      "wrjfbshkje",
+      "dbejhbdahbe",
+      "nsjebcshjebhebfejfjeh"
+    ]
+  },
+  {
+    "category": "maths",
+    "question": "Just another math question",
+    "answers": [
+      "nvdjksvn",
+      "cbdshjcb",
+      "jlvdjiljvlijvjnjn",
+      "dlkhejdh"
+    ]
+  }
+
+
+]

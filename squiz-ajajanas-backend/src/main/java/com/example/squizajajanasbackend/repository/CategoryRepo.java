@@ -1,7 +1,6 @@
 package com.example.squizajajanasbackend.repository;
 
 import com.example.squizajajanasbackend.model.Category;
-import com.example.squizajajanasbackend.model.CorrectAnswer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

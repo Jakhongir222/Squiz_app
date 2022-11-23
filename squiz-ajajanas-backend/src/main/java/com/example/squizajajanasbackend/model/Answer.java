@@ -5,8 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "wrong_answer")
-public class WrongAnswer {
+@Table(name = "answers")
+public class Answer {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -20,12 +20,12 @@ public class WrongAnswer {
     @Column(name = "answer")
     private String wrongAnswer;
 
-    public WrongAnswer(String answerId, String wrongAnswer) {
+    public Answer(String answerId, String wrongAnswer) {
         this.answerId = answerId;
         this.wrongAnswer = wrongAnswer;
     }
 
-    public WrongAnswer() {
+    public Answer() {
     }
 
     public String getAnswerId() {
