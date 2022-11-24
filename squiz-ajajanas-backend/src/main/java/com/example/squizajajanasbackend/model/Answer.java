@@ -40,8 +40,8 @@ public class Answer {
         return answer;
     }
 
-    public void setAnswer(String wrongAnswer) {
-        this.answer = wrongAnswer;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
 }
