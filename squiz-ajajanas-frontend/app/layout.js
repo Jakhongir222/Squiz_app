@@ -2,6 +2,7 @@
 
 import Navbar from "./navbar";
 import Footer from "./footer";
+import "../styles/layout.css"
 
 
 export default function RootLayout({ children }) {
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
       <head></head>
       <body>
         <Navbar/>
-        <main>{children}</main>
+        <main className="">{children}</main>
         <Footer/>
       </body>
     </html>

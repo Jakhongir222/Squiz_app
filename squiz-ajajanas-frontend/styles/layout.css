@@ -1,0 +1,20 @@
+body {
+    background-color: #e5e5e5;
+}
+
+.Logo {
+    background-color: #14213d;
+    max-width: 60%;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+.img {
+    background-color: aqua;
+}
+
+.Topper {
+    background-color: #14213d;
+}

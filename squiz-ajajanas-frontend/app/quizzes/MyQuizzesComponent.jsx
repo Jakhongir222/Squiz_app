@@ -6,15 +6,16 @@ function MyQuizzesComponent() {
 
   const [categoryList, setCategoryList] = useState({});
 
-
-  useEffect(()=>{
-    setCategoryList({
-      'geography': '4028e52384a8fba30184a8fbaaa70000',
-      'math': '4028e52384a8fba30184a8fbac4d0004'
-    });
-  },[])
+  useEffect(() => {
+    const dict = {}
+    fetch('http://localhost:8080/category')
+      .then(data => data.json())
+      .then(data => data.forEach(e => {
+        dict[e.name] = e.id;
+      }))
+      .then(() => setCategoryList(dict))
+  },[]);
   
-
   return (
     <div>
       {Object.keys(categoryList).map((category, index) => {
@@ -27,7 +28,7 @@ function MyQuizzesComponent() {
         )
       })}
     </div>
-  )
+  );
 }
 
 export default MyQuizzesComponent
