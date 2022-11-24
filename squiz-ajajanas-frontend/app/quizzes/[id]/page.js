@@ -1,11 +1,11 @@
 'use client'
 
-import MyComponent from './MyComponent'
+import Controller from './Controller'
 
 function quizpage({ params }) {
   return (
     <div>
-      <MyComponent categoryId={params.id}/>
+      <Controller categoryId={params.id}/>
     </div>
   )
 }

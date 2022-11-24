@@ -9,8 +9,8 @@ function MyQuizzesComponent() {
 
   useEffect(()=>{
     setCategoryList({
-      'geography': '4028e52384a4af4c0184a4af53a10000',
-      'math': '4028e52384a4af4c0184a4af550c0004'
+      'geography': '4028e52384a8fba30184a8fbaaa70000',
+      'math': '4028e52384a8fba30184a8fbac4d0004'
     });
   },[])
   
