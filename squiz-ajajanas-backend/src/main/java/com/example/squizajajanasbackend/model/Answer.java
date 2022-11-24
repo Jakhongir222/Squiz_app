@@ -18,11 +18,11 @@ public class Answer {
     private String answerId;
 
     @Column(name = "answer")
-    private String wrongAnswer;
+    private String answer;
 
-    public Answer(String answerId, String wrongAnswer) {
+    public Answer(String answerId, String answer) {
         this.answerId = answerId;
-        this.wrongAnswer = wrongAnswer;
+        this.answer = answer;
     }
 
     public Answer() {
@@ -36,12 +36,12 @@ public class Answer {
         this.answerId = answerId;
     }
 
-    public String getWrongAnswer() {
-        return wrongAnswer;
+    public String getAnswer() {
+        return answer;
     }
 
-    public void setWrongAnswer(String wrongAnswer) {
-        this.wrongAnswer = wrongAnswer;
+    public void setAnswer(String wrongAnswer) {
+        this.answer = wrongAnswer;
     }
 
 }
