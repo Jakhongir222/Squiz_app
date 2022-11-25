@@ -1,6 +1,6 @@
 [
   {
-    "category": "geography",
+    "category": "Geography",
     "question": "What is the name of the second tallest mountain in the world?",
     "answers": [
       "K2",
@@ -9,37 +9,595 @@
       "Everest"
     ]
   },
-
   {
-    "category": "geography",
-    "question": "What is the biggest fjord in Norway?",
+    "category": "Geography",
+    "question": "What type of leaf is on the Canadian flag?",
     "answers": [
-      "Sognefjorden",
-      "Geirdangerfjorden",
-      "Oslofjorden",
-      "Jakhongirfjorden"
+      "Maple",
+      "Oak",
+      "Pinus",
+      "Plum"
     ]
   },
   {
-    "category": "geography",
-    "question": "Just another test question",
+    "category": "Geography",
+    "question": "In which European city was the first organized marathon held?",
     "answers": [
-      "njbcdjheb",
-      "wrjfbshkje",
-      "dbejhbdahbe",
-      "nsjebcshjebhebfejfjeh"
+      "Athens",
+      "Stockholm",
+      "Rome",
+      "Madrid"
     ]
   },
   {
-    "category": "maths",
-    "question": "Just another math question",
+    "category": "Geography",
+    "question": "What is the capital of Peru?",
     "answers": [
-      "nvdjksvn",
-      "cbdshjcb",
-      "jlvdjiljvlijvjnjn",
-      "dlkhejdh"
+      "Lima",
+      "Ecuador",
+      "Santiago",
+      "Karakas"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "In which city would you find La Sagrada Familia?",
+    "answers": [
+      "Barcelona",
+      "Mexico",
+      "Brasilia",
+      "Rio de Janeiro"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "What country has the most natural lakes?",
+    "answers": [
+      "Canada",
+      "USA",
+      "Australia",
+      "Sweden"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "What is the only sea without any coasts?",
+    "answers": [
+      "Sargasso Sea",
+      "Adriatic sea",
+      "Celebes sea",
+      "Dead sea"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "What is the driest place on Earth?",
+    "answers": [
+      "Antarctica",
+      "Sahara",
+      "Kufra",
+      "Taklamakan"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "Which African nation has the most pyramids?",
+    "answers": [
+      "Sudan",
+      "Egypt",
+      "Algeria",
+      "Morocco"
+    ]
+  },
+  {
+    "category": "Geography",
+    "question": "What mountain is closest to the Moon?",
+    "answers": [
+      "Mount Chimborazo",
+      "Mount Everest",
+      "Mount Pandim",
+      "Mount Rushmore"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "In the state of Georgia, it’s illegal to eat what with a fork?",
+    "answers": [
+      "Fried chicken",
+      "Pork",
+      "McDonalds",
+      "Pizza"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "When was “OMG” first used?",
+    "answers": [
+      "1917",
+      "1940",
+      "1967",
+      "1988"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal has the largest eyes in the world?",
+    "answers": [
+      "Giant Squid",
+      "Whale",
+      "Shark",
+      "Elephant"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal can not stick their tongue out?",
+    "answers": [
+      "Crocodile",
+      "Koala",
+      "Turtle",
+      "Spider"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "Whose eyes are bigger than its brain?",
+    "answers": [
+      "Ostrich",
+      "Fly",
+      "Tarsier",
+      "Snake"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What was the last letter added to the English alphabet?",
+    "answers": [
+      "J",
+      "Z",
+      "W",
+      "Y"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "Where were Doritos invented?",
+    "answers": [
+      "Casa de Fritos at Disneyland",
+      "Casa de deliciosa Puerto Rico",
+      "Case de grande Mexico",
+      "Taco bell in Florida"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal's heart is located in its head?",
+    "answers": [
+      "Shrimp",
+      "Seahorse",
+      "Plancton",
+      "Sea Monkey"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What  is Odontophobia?",
+    "answers": [
+      "Fear of teeth",
+      "Fear of darkness",
+      "Fear of deep water",
+      "Fear of height"
+    ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What is the only animal that can’t jump?",
+    "answers": [
+      "Elephant",
+      "Hippopotamus",
+      "Giraffe",
+      "Snake"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "Who was the Ancient Greek God of the Sun?",
+    "answers": [
+      "Apollo",
+      "Athena",
+      "Hera",
+      "Hestia"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What year was the United Nations established?",
+    "answers": [
+      "1945",
+      "1941",
+      "1918",
+      "1955"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What artist has the most streams on Spotify?",
+    "answers": [
+      "Drake",
+      "Eminem",
+      "Beyonce",
+      "Rihanna"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What is a group of crows called?",
+    "answers": [
+      "Murder",
+      "Flock",
+      "Herd",
+      "Group"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many elements are in the periodic table?",
+    "answers": [
+      "118",
+      "109",
+      "106",
+      "111"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What country drinks the most coffee per capita?",
+    "answers": [
+      "Finland",
+      "Sweden",
+      "Norway",
+      "Denmark"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "Which planet in the solar system is the hottest?",
+    "answers": [
+      "Venus",
+      "Mars",
+      "Saturn",
+      "Mercury"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many bones do we have in an ear?",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "None"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What country has won the most World Cups?",
+    "answers": [
+      "Brasil",
+      "Argentina",
+      "Germany",
+      "Italy"
+    ]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many hearts does an octopus have?",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When did the first world war begin?",
+    "answers": [
+      "1914",
+      "1916",
+      "1918",
+      "1915"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "The German attack on which country caused Britain to enter the Second World War?",
+    "answers": [
+      "Poland",
+      "Spain",
+      "France",
+      "Slovakia"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "Who was the world’s first woman Prime Minister?",
+    "answers": [
+      "Sirimavo Bandaranaike",
+      "Indira Gandhi",
+      "Golda Meir",
+      "Margeret Thatcher"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "In what year was the Russian Revolution?",
+    "answers": [
+      "1917",
+      "1990",
+      "1912",
+      "1945"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "Who assassinated Abraham Lincoln?",
+    "answers": [
+      "John Wilkes Booth",
+      "John Travolta",
+      "Jonatan Ieloish",
+      "John Smith"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When Titanic sank?",
+    "answers": [
+      "1912",
+      "1913",
+      "1914",
+      "1915"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When was America discovered?",
+    "answers": [
+      "1492",
+      "1451",
+      "1506",
+      "1509"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When did bubonic plague arrive in Europe?",
+    "answers": [
+      "1347",
+      "1375",
+      "1306",
+      "1379"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When was Darwin's The Origin of Species published?",
+    "answers": [
+      "1859",
+      "1864",
+      "1875",
+      "1855"
+    ]
+  },
+  {
+    "category": "History",
+    "question": "When First Atomic Bomb used?",
+    "answers": [
+      "1945",
+      "1941",
+      "1875",
+      "1943"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is zero?",
+    "answers": [
+      "Even number",
+      "Odd number",
+      "Not a number",
+      "Neither odd nor even"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the value of pi?",
+    "answers": [
+      "3.14",
+      "3.41",
+      "3.12",
+      "3.16"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square root of 121?",
+    "answers": [
+      "11",
+      "13",
+      "17",
+      "15"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the bottom number in fraction called?",
+    "answers": [
+      "Denominator",
+      "Numerator",
+      "Decimal",
+      "Declarative"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "How many zeros in a million?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is a roman numeral for 100?",
+    "answers": [
+      "C",
+      "XI",
+      "M",
+      "LL"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the name given to an angle that is less than 90 degrees?",
+    "answers": [
+      "Acute angle",
+      "Right angle",
+      "Straight angle",
+      "Reflex angle"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "How many sides does a dodecahedron have?",
+    "answers": [
+      "12",
+      "8",
+      "14",
+      "16"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the top number in a fraction called?",
+    "answers": [
+      "Numerator",
+      "Numeral",
+      "Denominator",
+      "Decimal"
+    ]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is another name for the perimeter of a circle?",
+    "answers": [
+      "Circumference",
+      "Circumstance",
+      "Circular",
+      "Size"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What DATA TYPE has only 2 possible values?",
+    "answers": [
+      "Boolean",
+      "Float",
+      "String",
+      "Integer"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "In Java, a method is a container that holds classes",
+    "answers": [
+      "False",
+      "True",
+      "There is no container in Java",
+      "There is no class in Java"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What does HTML stand for?",
+    "answers": [
+      "Hyper Text Markup Language",
+      "Hyper Text Marketing Language",
+      "Hyper Trainer Marking Language",
+      "Hyper Text Markup Leveler"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "How many bytes in a megabyte?",
+    "answers": [
+      "1000000",
+      "1024",
+      "100000",
+      "10000"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What is Recursion?",
+    "answers": [
+      "It is a function calling itself based on a terminating condition",
+      "It is a paradigm that provides concepts such as objects, classes, and inheritance",
+      "It stores data in a manner that it can be retrieved very efficiently",
+      "It is unresolved promise"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What is a Linked List?",
+    "answers": [
+      "It is a linear data structure in which the elements are not necessarily stored in a contiguous manner",
+      "It is a way of accessing, storing and retrieving data",
+      "It is a is an extension of the linked list structure where each node has at most two children",
+      "It is a link to the database"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What is LIFO?",
+    "answers": [
+      "Last In First Out",
+      "Last In Fast Out",
+      "Latest In Fastest Out",
+      "Less In Faster Out"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What does CSS stand for?",
+    "answers": [
+      "Cascading Style Sheets",
+      "Categorizing Style Sheets",
+      "Categorizing System Sheets",
+      "Cascading System Sheets"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "When a runtime error occurs?",
+    "answers": [
+      "When the computer is directed to perform an illegal operation by the program",
+      "When the program violates one or more grammatical rules of the programming language",
+      "When a program implements the wrong logic",
+      "All answers are correct"
+    ]
+  },
+  {
+    "category": "Programming",
+    "question": "What are constants?",
+    "answers": [
+      "It is a quantity whose value cannot be changed",
+      "It is the value stored in a local variable",
+      "It is a quantity whose value can be changed",
+      "It is a quantity that we received"
     ]
   }
-
 
 ]

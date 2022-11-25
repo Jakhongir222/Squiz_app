@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "../../../../styles/layout.css"
 
 function Question( {currentQuestion, goToNextQuestion} ) {
 
@@ -15,10 +16,10 @@ function Question( {currentQuestion, goToNextQuestion} ) {
 
   return (
     <div>
-      <div>{currentQuestion.question}</div>
-      <div>{shuffledAnswers.map((answer, index) => {
+      <div className='question'>{currentQuestion.question}</div>
+      <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
-          <button key={index} onClick={() => handleSubmitAnswer(answer)}>
+          <button className='answer-button' key={index} onClick={() => handleSubmitAnswer(answer)}>
             {answer.answer}
           </button>
         );
