@@ -2,7 +2,7 @@ import React from 'react'
 
 function footer() {
   return (
-    <div>footer</div>
+    <div className='footer'>Powered by Ajajanas</div>
   )
 }
 

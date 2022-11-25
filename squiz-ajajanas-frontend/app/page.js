@@ -1,14 +1,14 @@
 import { React, useEffect } from 'react'
-import Question from './quizzes/[id]/(question)/Question'
+import "../styles/layout.css" ;
 
 function homepage() {
   
   return (
-    <div>
-    <div>Home</div>
-    <a href='http://localhost:3000/quizzes'>
-    <button>Quiz Categories</button>
-    </a>
+    <div className= 'homePage'>
+      <p classname= 'quote'> Are you Ready to Squiz your knowledge ?</p>
+      <a className='categories_button'  href='/quizzes'>
+      <button className='pickCategorybtn'>Pick a Quiz Category</button>
+      </a>
     </div>
   )
 }

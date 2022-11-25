@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import "../../styles/layout.css" 
 
 function MyQuizzesComponent() {
 
@@ -15,13 +16,14 @@ function MyQuizzesComponent() {
       }))
       .then(() => setCategoryList(dict))
   },[]);
-  
+  // <img src="https://thispersondoesnotexist.com/image"/>
   return (
-    <div>
+    <div className='categories'>
       {Object.keys(categoryList).map((category, index) => {
         return (
-          <a key={index} href={`quizzes/${categoryList[category]}`}>
-            <div key={index}>
+          <a className='categoryName' key={index} href={`quizzes/${categoryList[category]}`}>
+            <img src="https://thispersondoesnotexist.com/image" width="200"/>
+            <div  key={index}>
              {category}
            </div>
           </a>
