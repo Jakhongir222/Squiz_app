@@ -16,7 +16,7 @@ function MyQuizzesComponent() {
       }))
       .then(() => setCategoryList(dict))
   },[]);
-  // <img src="https://thispersondoesnotexist.com/image"/>
+  
   return (
     <div className='categories'>
       {Object.keys(categoryList).map((category, index) => {

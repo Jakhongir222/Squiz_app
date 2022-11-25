@@ -22,10 +22,6 @@ body {
     background-color: var(--primary-light-color);
 }
 
-.Topper {
-    background-color: #190933 ;
-}
-
 .navbar {
     list-style-type: none;
 }
