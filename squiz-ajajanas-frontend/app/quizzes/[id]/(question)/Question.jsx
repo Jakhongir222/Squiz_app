@@ -1,22 +1,42 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import "../../../../styles/layout.css"
+import { v4 as uuidv4 } from 'uuid';
+import QuestionImage from './QuestionImage';
 
-function Question( {currentQuestion, goToNextQuestion} ) {
+function Question( {currentQuestion, goToNextQuestion, streak} ) {
 
-  if(!currentQuestion) {return <div>Finishing quiz...</div>}
+  const timerlength = 10;
+  const [countdown, setCountdown] = useState(timerlength);
+  const resetTimer = () => setCountdown(timerlength);
+
+  const outOfTimeAnswer = {'answerId': uuidv4(), 'answer': 'NaA'}
+
+  const[shuffledAnswers, setShuffledAnswers] = useState([]);
+  
+  useEffect(() => {
+    setShuffledAnswers([...currentQuestion.wrongAnswers].sort(() => Math.random() - 0.5));
+  }, [currentQuestion]);
 
   const handleSubmitAnswer = (givenAnswer) => {
-    if (currentQuestion.wrongAnswers[0] === givenAnswer) {
-      goToNextQuestion(true);
-    }
-      goToNextQuestion(false);
+    resetTimer();
+    goToNextQuestion(givenAnswer, currentQuestion, countdown);
   }
 
-  const shuffledAnswers = [...currentQuestion.wrongAnswers].sort(() => Math.random() - 0.5);
+  useEffect(() => {
+    if(countdown<0) handleSubmitAnswer(outOfTimeAnswer);
+
+    const interval = setInterval(() => {
+      setCountdown(countdown - 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [countdown])
 
   return (
     <div>
       <div className='question'>{currentQuestion.question}</div>
+      <div className='timer'>{countdown}</div>
+      <div className='streak'>Current streak: {streak}</div>
+      {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
           <button className='answer-button' key={index} onClick={() => handleSubmitAnswer(answer)}>
