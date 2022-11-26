@@ -8,14 +8,7 @@ function Controller({categoryId}) {
   const [quiz, setQuiz] = useState({});
   const [quizStarted, setQuizStarted] = useState(true);
   const [quizIsDone, setQuizIsDone] = useState(false);
-
-  const [finalScore, setFinalScore] = useState(0);
-  const [quizQuestions, setQuizQuestions] = useState([])
-  const [playerAnswers, setPlayerAnswers] = useState([])
-  const [questionTime, setQuestionTime] = useState([])
-  const [streaks, setStreaks] = useState([])
-
-
+  const [quizDetailProps, setQuizDetailProps] = useState();
   const [done, setDone] = useState(false);
 
   useEffect(() => {
@@ -25,21 +18,15 @@ function Controller({categoryId}) {
       .then(() => setDone(true));
   },[categoryId]);
 
-  const finishQuiz = (score, quizQuestions, playerAnswers, playerTime, streaks) => {
-    setFinalScore(score);
-    setQuizQuestions(quizQuestions)
-    setPlayerAnswers(playerAnswers);
-    setQuestionTime(playerTime);
-    console.log(streaks);
-    setStreaks(streaks);
-
+  const finishQuiz = (...props) => {
+    setQuizDetailProps({props});
     setQuizIsDone(true);
   }
 
   const questionProps = {quiz, finishQuiz};
 
   if (quizIsDone) {
-    return <QuizFinish score={finalScore} questions={quizQuestions} answers={playerAnswers} time={questionTime} streaks={streaks}/>
+    return <QuizFinish {...quizDetailProps}/>
   } else  if (quizStarted && done) {
     return <QuestionController {...questionProps} />
   } else {

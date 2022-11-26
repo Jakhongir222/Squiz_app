@@ -1,6 +1,7 @@
 import React from 'react'
 
-function QuizFinish( {score, questions, answers, time, streaks} ) {
+function QuizFinish( {props} ) {
+  const [score, questions, answers, time, streaks] = props;
 
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
