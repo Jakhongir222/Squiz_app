@@ -691,12 +691,112 @@
   },
   {
     "category": "Logic",
-    "question": "I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old are we now??",
+    "question": "I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old are we now?",
     "answers": [
       "40 and 10",
       "32 and 8",
       "28 and 7",
       "60 and 15"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "Which mammal is known to have the most powerful bite in the world?",
+    "answers": [
+      "Hippopotamus",
+      "Tiger",
+      "Lion",
+      "Crocodile"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "How long is an elephant pregnant before it gives birth?",
+    "answers": [
+      "22 month",
+      "12 month",
+      "9 month",
+      "18 month"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal is known to spend 90% of its day sleeping?",
+    "answers": [
+      "Koala",
+      "Sloth",
+      "Cat",
+      "Bear"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "What color is the tongue of a giraffe?",
+    "answers": [
+      "Purple",
+      "Green",
+      "Black",
+      "Red"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "A baby goat is called what?",
+    "answers": [
+      "Kid",
+      "Goatee",
+      "Goatlet",
+      "Baby goat"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "What animal is the largest mammal in the world?",
+    "answers": [
+      "Blue Whale",
+      "Elephant",
+      "Rhino",
+      "Ostrich"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal can move its eyes independently?",
+    "answers": [
+      "Chameleon",
+      "Snake",
+      "Crocodile",
+      "Turtle"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "Where are a cricket’s ears located?",
+    "answers": [
+      "On their leg",
+      "On their stomach",
+      "On their back",
+      "On their elbows"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "How many eyes do caterpillars have?",
+    "answers": [
+      "12",
+      "10",
+      "8",
+      "6"
+    ]
+  },
+  {
+    "category": "Animals",
+    "question": "How many times do a bee’s wings beat per second?",
+    "answers": [
+      "190 times",
+      "140 times",
+      "120 times",
+      "80 times"
     ]
   }
 ]

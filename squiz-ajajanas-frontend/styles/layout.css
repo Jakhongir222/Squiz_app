@@ -38,7 +38,7 @@ body {
 }
 
 .navbar-button:hover{
-    color: #7209b7;
+    color: var(--primary-dark-color);
 }
 
 
