@@ -10,10 +10,15 @@ function Controller({categoryId}) {
   const [quizIsDone, setQuizIsDone] = useState(false);
   const [quizDetailProps, setQuizDetailProps] = useState();
   const [done, setDone] = useState(false);
+  
+  //Number of questions per quiz
+  const n = 10;
 
   useEffect(() => {
     fetch(`http://localhost:8080/category/${categoryId}`)
       .then(data => data.json())
+      .then(data => {return {...data, questions: data.questions.sort(() => 0.5 - Math.random())}})
+      .then(data => {return {...data, questions: data.questions.slice(0, n)}})
       .then(data => setQuiz(data))
       .then(() => setDone(true));
   },[categoryId]);

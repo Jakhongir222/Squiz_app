@@ -1,20 +1,21 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Question from './Question';
+import { CalculateScore } from './ScoreCalculator';
 
 function QuestionController( {quiz, finishQuiz} ) {
   
   const [qIndex, setQIndex] = useState(0);
-  const score = useRef(0);
   const playerAnswers = useRef([]);
   const quizQuestions = useRef([]);
   const playerTimeRemaining = useRef([]);
 
+  const [score, setScore] = useState(0)
   const [streak, setStreak] = useState(0);
   const streaks = useRef([]);
 
   const goToNextQuestion = (givenAnswer, currentQuestion, timeRemaining) => {
     if (givenAnswer === currentQuestion.wrongAnswers[0]){
-      score.current += 1;
+      setScore(score + CalculateScore(streak, timeRemaining));
       setStreak(streak + 1);
     } else {
       setStreak(0);
@@ -27,7 +28,7 @@ function QuestionController( {quiz, finishQuiz} ) {
     
     if (qIndex + 1 >= quiz.questions.length) {
       finishQuiz(
-        score.current,
+        score,
         quizQuestions.current,
         playerAnswers.current,
         playerTimeRemaining.current,
@@ -38,7 +39,7 @@ function QuestionController( {quiz, finishQuiz} ) {
   };
 
   const currentQuestion = quiz?.questions[qIndex];
-  const questionProps = {currentQuestion, goToNextQuestion, streak}
+  const questionProps = {currentQuestion, goToNextQuestion, streak, score}
 
   return <div>{<Question {...questionProps}/>}</div>
 

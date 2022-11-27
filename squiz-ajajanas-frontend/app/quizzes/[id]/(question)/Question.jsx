@@ -3,18 +3,21 @@ import "../../../../styles/layout.css"
 import { v4 as uuidv4 } from 'uuid';
 import QuestionImage from './QuestionImage';
 
-function Question( {currentQuestion, goToNextQuestion, streak} ) {
-
+function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   const timerlength = 10;
   const [countdown, setCountdown] = useState(timerlength);
   const resetTimer = () => setCountdown(timerlength);
 
-  const outOfTimeAnswer = {'answerId': uuidv4(), 'answer': 'NaA'}
-
   const[shuffledAnswers, setShuffledAnswers] = useState([]);
   
+  const shuffleAndSelectAnswers = (ansArray) => {
+    return ansArray
+      .sort(() => Math.random() - 0.5)
+      .slice(0,4);
+  }
+
   useEffect(() => {
-    setShuffledAnswers([...currentQuestion.wrongAnswers].sort(() => Math.random() - 0.5));
+    setShuffledAnswers(shuffleAndSelectAnswers([...currentQuestion.wrongAnswers]))
   }, [currentQuestion]);
 
   const handleSubmitAnswer = (givenAnswer) => {
@@ -23,7 +26,7 @@ function Question( {currentQuestion, goToNextQuestion, streak} ) {
   }
 
   useEffect(() => {
-    if(countdown<0) handleSubmitAnswer(outOfTimeAnswer);
+    if(countdown<0) handleSubmitAnswer({'answerId': uuidv4(), 'answer': 'NaA'});
 
     const interval = setInterval(() => {
       setCountdown(countdown - 1);
@@ -36,6 +39,7 @@ function Question( {currentQuestion, goToNextQuestion, streak} ) {
       <div className='question'>{currentQuestion.question}</div>
       <div className='timer'>{countdown}</div>
       <div className='streak'>Current streak: {streak}</div>
+      <div className='score'>Current score: {score}</div>
       {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
