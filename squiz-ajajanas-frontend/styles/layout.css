@@ -4,6 +4,7 @@
     --secondary-dark-color: #B084CC;
     --button-primary-color: #ACFCD9;
     --button-secondary-color: #5DD9C1;
+    --white-text-color: aliceblue;
 }
 body {
     background-color: var(--background-color);
@@ -18,114 +19,37 @@ body {
     margin: auto;
   }
 
-.img {
-    background-color: var(--primary-light-color);
-}
-
 .navbar {
-    list-style-type: none;
-}
-
-.questions {
-    background-color: var(--primary-dark-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 150px;
-    margin: 30px;
-    color: var(--background-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px
-
-}
-
-.answer {
-    color: rgb(234, 20, 17);
-    display: flex;
-    align-items: stretch;
-  justify-content: space-around;
-    align-items: center;
-    min-height: 100%;
-    width: 100%;
-    flex-direction: column;
-    
-}
-
-.answer-button {
-    border-radius: 25px;
-    border: 0;
-    background-color: var(--secondary-dark-color);
-    margin: 10px;
-    padding: 20px;
-    min-width: 400px;
-    min-height: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.answer-button:hover {
+    margin: 5px;
+    padding: 5px;
     background-color: var(--button-primary-color);
-}
-
-.question {
-    border-bottom: 5solid black;
-    padding-bottom: 40px;
-    margin-bottom: 100px;
-
-}
-
-.categories {
-
-    padding: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
-    column-gap: 30px;    
-    row-gap: 50px;
     
 }
 
-a:link {
-    text-decoration: none;
+.navbar-button {
+    cursor: pointer;
+    background-color: var(--button-primary-color);
+    border-radius: 5px;
+    border: 0;
+    font-size:medium
+    
 }
 
-.categoryName {
-    color: #5DD9C1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.navbar-button:hover{
+    color: #7209b7;
 }
 
-quote {
-    color: var(--secondary-dark-color);
-    display: flex;
-    font-size: 20px;
 
-}
-
-.homePage {
-    background-color: var(--secondary-dark-color);
-    height: 60vh;
+.footer {
+    color: var(--white-text-color);
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
-.pickCategorybtn {
-    
-    background-color: var(--button-secondary-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 0;
-    border-radius: 20px;
-    padding: 10px 20px 10px;
-    font-size: 50px;
-}
+
+
+
+
+

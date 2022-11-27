@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import Question from './(question)/Question';
 import QuestionController from './(question)/QuestionController';
 import QuizFinish from './QuizFinish';
 import QuizStart from './QuizStart';

@@ -1,7 +1,7 @@
 'use client'
 
 import Controller from './Controller'
-import "../../../styles/layout.css"
+import "../../../styles/Quiz.css"
 
 function quizpage({ params }) {
   return (

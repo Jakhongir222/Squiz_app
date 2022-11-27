@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "../../../../styles/layout.css"
+import "../../../../styles/Quiz.css"
 
 function Question( {currentQuestion, goToNextQuestion} ) {
 
@@ -16,7 +16,7 @@ function Question( {currentQuestion, goToNextQuestion} ) {
 
   return (
     <div>
-      <div className='question'>{currentQuestion.question}</div>
+      <div>{currentQuestion.question}</div>
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
           <button className='answer-button' key={index} onClick={() => handleSubmitAnswer(answer)}>

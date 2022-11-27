@@ -1,0 +1,30 @@
+.header {
+    color: var(--white-text-color);
+}
+
+.intro {
+    color: var(--white-text-color);
+    
+}
+
+.profile-picture {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white-text-color);
+    max-width: 400px;
+    max-height: fit-content;
+    padding: 10px;
+}
+
+.about-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: space-between;
+}

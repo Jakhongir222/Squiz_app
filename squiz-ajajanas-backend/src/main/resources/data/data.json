@@ -524,8 +524,8 @@
     "question": "What does HTML stand for?",
     "answers": [
       "Hyper Text Markup Language",
-      "Hyper Text Marketing Language",
-      "Hyper Trainer Marking Language",
+      "HyperText Make Language",
+      "HyperText Mark Language",
       "Hyper Text Markup Leveler"
     ]
   },
@@ -541,22 +541,22 @@
   },
   {
     "category": "Programming",
-    "question": "What is Recursion?",
+    "question": "What is a function calling itself based on a terminating condition?",
     "answers": [
-      "It is a function calling itself based on a terminating condition",
-      "It is a paradigm that provides concepts such as objects, classes, and inheritance",
-      "It stores data in a manner that it can be retrieved very efficiently",
-      "It is unresolved promise"
+      "Recursion",
+      "Promise",
+      "Callback",
+      "Repetition"
     ]
   },
   {
     "category": "Programming",
-    "question": "What is a Linked List?",
+    "question": "What is a linear data structure in which the elements are not necessarily stored in a contiguous manner?",
     "answers": [
-      "It is a linear data structure in which the elements are not necessarily stored in a contiguous manner",
-      "It is a way of accessing, storing and retrieving data",
-      "It is a is an extension of the linked list structure where each node has at most two children",
-      "It is a link to the database"
+      "Linked list",
+      "Data elements",
+      "List structure",
+      "Collection"
     ]
   },
   {
@@ -581,23 +581,122 @@
   },
   {
     "category": "Programming",
-    "question": "When a runtime error occurs?",
+    "question": "What kind of error is it when the computer is directed to perform an illegal operation by the program?",
     "answers": [
-      "When the computer is directed to perform an illegal operation by the program",
-      "When the program violates one or more grammatical rules of the programming language",
-      "When a program implements the wrong logic",
-      "All answers are correct"
+      "Runtime error",
+      "Syntax error",
+      "Logic error",
+      "Technical error"
     ]
   },
   {
     "category": "Programming",
-    "question": "What are constants?",
+    "question": "How many types of non-linear data structure exists?",
     "answers": [
-      "It is a quantity whose value cannot be changed",
-      "It is the value stored in a local variable",
-      "It is a quantity whose value can be changed",
-      "It is a quantity that we received"
+      "4",
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "If you count from 1 to 100, how many 7's will you pass on the way?",
+    "answers": [
+      "20",
+      "13",
+      "11",
+      "17"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "If two typists can type two pages in two minutes, how many typists will it take to type 18 pages in 6 minutes?",
+    "answers": [
+      "6",
+      "3",
+      "12",
+      "18"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "Divide 30 by half and add ten..",
+    "answers": [
+      "70",
+      "50",
+      "40,5",
+      "None of above"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "A farmer has 17 sheep, all of them but 8 die. How many sheep are still standing?",
+    "answers": [
+      "8",
+      "9",
+      "25",
+      "35"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "There are 45 apples in your basket. You take three apples out of the basket. How many apples are left?",
+    "answers": [
+      "45",
+      "43",
+      "3",
+      "I don’t like apples"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "None of above"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "Which months have 28 days?",
+    "answers": [
+      "All of above",
+      "February",
+      "January",
+      "May"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "Introducing a man, a woman said, He is the only son of the mother of my mother. How is the woman related to the man?",
+    "answers": [
+      "Niece",
+      "Maternal uncle",
+      "Nephew",
+      "Cousins"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "Mary’s father has 5 daughters. The name of the 1st daughter is Nana, the 2nd daughter is Nunu, the 3rd daughter is Nini, and the 4th daughter is Nene. What is the name of the 5th daughter?",
+    "answers": [
+      "Mary",
+      "Nono",
+      "Nantia",
+      "Nina"
+    ]
+  },
+  {
+    "category": "Logic",
+    "question": "I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old are we now??",
+    "answers": [
+      "40 and 10",
+      "32 and 8",
+      "28 and 7",
+      "60 and 15"
     ]
   }
-
 ]

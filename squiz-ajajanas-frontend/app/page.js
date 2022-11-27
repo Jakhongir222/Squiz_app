@@ -1,13 +1,13 @@
-import { React, useEffect } from 'react'
-import "../styles/layout.css" ;
+import { React } from 'react'
+import "../styles/Home.css";
 
 function homepage() {
   
   return (
-    <div className= 'homePage'>
-      <p classname= 'quote'> Are you Ready to Squiz your knowledge ?</p>
-      <a className='categories_button'  href='/quizzes'>
-      <button className='pickCategorybtn'>Pick a Quiz Category</button>
+    <div className= 'home-page'>
+      <p classname= 'welcoming-quote'> Are you ready to Squiz your knowledge ?</p>
+      <a href='/quizzes'>
+      <button className='pick-category-button'>Pick a Quiz Category</button>
       </a>
     </div>
   )
