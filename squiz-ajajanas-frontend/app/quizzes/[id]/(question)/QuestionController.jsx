@@ -10,6 +10,7 @@ function QuestionController( {quiz, finishQuiz} ) {
   const playerTimeRemaining = useRef([]);
 
   const [score, setScore] = useState(0)
+  const scores = useRef([]);
   const [streak, setStreak] = useState(0);
   const streaks = useRef([]);
 
@@ -20,15 +21,15 @@ function QuestionController( {quiz, finishQuiz} ) {
     } else {
       setStreak(0);
     }
-    
-    streaks.current = ([...streaks.current, streak]);
+    scores.current = [...scores.current, score];
+    streaks.current = [...streaks.current, streak];
     playerAnswers.current = [...playerAnswers.current, givenAnswer];
     quizQuestions.current = [...quizQuestions.current, currentQuestion];
     playerTimeRemaining.current = [...playerTimeRemaining.current, timeRemaining];
     
     if (qIndex + 1 >= quiz.questions.length) {
       finishQuiz(
-        score,
+        scores.current,
         quizQuestions.current,
         playerAnswers.current,
         playerTimeRemaining.current,

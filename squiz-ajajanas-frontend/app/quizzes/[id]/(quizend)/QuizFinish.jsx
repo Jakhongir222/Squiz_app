@@ -1,24 +1,20 @@
 import React from 'react'
+import Timeline from './Timeline';
 
 function QuizFinish( {props} ) {
-  const [score, questions, answers, time, streaks] = props;
 
+  const [scores, questions, answers, time, streaks] = props;
+  console.log(scores[9]);
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
 
   return (
     <div>
-      
-      <div>Completed! Your score {score}</div>
-      <div>
-              Highest Streak: {highestStreak}
-            </div>
+      <Timeline props={props} />
+      <div>Completed! Your score {scores[scores.length-1]}</div>
+      <div>Highest Streak: {highestStreak}</div>
       <ul>{questions.map((q, index) => {
-        if (answers[index].answer === q.wrongAnswers[0].answer) {
-          color = '#0f0'
-        } else {
-          color = '#f00'
-        }
+        color = (answers[index].answer === q.wrongAnswers[0].answer) ? '#0f0': '#f00';
         return (
           <li key={index} style={{background: color}}>
             <div>
