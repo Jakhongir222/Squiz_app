@@ -11,9 +11,9 @@ spring:
       enabled: always
   datasource:
     driver-class-name:
-    url: jdbc:postgresql://mouse.db.elephantsql.com/trsdjhyx
-    username: trsdjhyx
-    password: O969C-4dcXRJ-MCKV66wi6z6XjOU27kM
+    url: jdbc:postgresql://mouse.db.elephantsql.com/ocvhqdap
+    username: ocvhqdap
+    password: 6jnwhxgxiPBWGg2DMXtc96laX1O2aDwY
   jpa:
     show-sql: true
     generate-ddl: true
