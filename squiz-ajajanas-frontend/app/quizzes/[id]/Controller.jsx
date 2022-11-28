@@ -25,6 +25,7 @@ function Controller({categoryId}) {
   },[categoryId]);
 
   const finishQuiz = (...props) => {
+    props = [...props, categoryId];
     setQuizDetailProps({props});
     setQuizIsDone(true);
   }

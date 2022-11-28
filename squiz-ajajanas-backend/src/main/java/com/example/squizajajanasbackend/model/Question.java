@@ -25,11 +25,28 @@ public class Question {
     @OneToMany(cascade=CascadeType.ALL)
     private List<Answer> answers;
 
+    @Column(name="correct_answers_given")
+    private int correctAnswersGiven = 0;
+
+    @Column(name="total_answers_given")
+    private int totalAnswersGiven = 0;
+
+//    @Column(name="percentage_correct")
+//    private int percentageCorrect = 0;
+
 
 public Question(String questionId, String question, List<Answer> answers) {
         this.questionId = questionId;
         this.question = question;
         this.answers = answers;
+    }
+
+    public Question(String questionId, String question, List<Answer> answers, int correctAnswersGiven, int totalAnswersGiven) {
+        this.questionId = questionId;
+        this.question = question;
+        this.answers = answers;
+        this.correctAnswersGiven = correctAnswersGiven;
+        this.totalAnswersGiven = totalAnswersGiven;
     }
 
     public Question() {
@@ -59,4 +76,30 @@ public Question(String questionId, String question, List<Answer> answers) {
         this.answers = answers;
     }
 
+    public int getCorrectAnswersGiven() {
+        return correctAnswersGiven;
+    }
+
+    public void setCorrectAnswersGiven(int correctAnswersGiven) {
+        this.correctAnswersGiven = correctAnswersGiven;
+    }
+
+    public int getTotalAnswersGiven() {
+        return totalAnswersGiven;
+    }
+
+    public void setTotalAnswersGiven(int totalAnswersGiven) {
+        this.totalAnswersGiven = totalAnswersGiven;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "questionId='" + questionId + '\'' +
+                ", question='" + question + '\'' +
+                ", answers=" + answers +
+                ", correctAnswersGiven=" + correctAnswersGiven +
+                ", totalAnswersGiven=" + totalAnswersGiven +
+                '}';
+    }
 }
