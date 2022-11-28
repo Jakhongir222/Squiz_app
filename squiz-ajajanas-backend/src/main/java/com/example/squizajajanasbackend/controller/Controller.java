@@ -28,13 +28,16 @@ public class Controller {
         return ResponseEntity.ok(service.saveUser(user));
     }
 
+    @PostMapping("/test")
+    public ResponseEntity<?> testUser (@RequestBody String body) {
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>" + body);
+       return ResponseEntity.ok().body(body);
+    }
 
     @GetMapping("/user/{id}")
     public ResponseEntity<User> getUserById(@PathVariable String userId) {
         return ResponseEntity.ok(service.getUserById(userId));
     }
-
-
 
     @DeleteMapping("/user/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable String userId) {

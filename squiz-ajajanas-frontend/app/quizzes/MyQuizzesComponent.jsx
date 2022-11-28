@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import "../../styles/QuizCategories.css" 
 
+
+
 function MyQuizzesComponent() {
 
   const [categoryList, setCategoryList] = useState({});
@@ -31,5 +33,8 @@ function MyQuizzesComponent() {
     </div>
   );
 }
+
+  
+
 
 export default MyQuizzesComponent
