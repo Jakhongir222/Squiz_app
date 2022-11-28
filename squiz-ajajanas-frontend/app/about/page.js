@@ -1,5 +1,16 @@
 import React from 'react'
 import "../../styles/About.css"
+import Image from 'next/image'
+
+const Jak = () => (
+    <div className="profile-picture">
+      <Image
+        src="/../../public/images/Jak.png"
+        width={200}
+        height={200}
+      />
+    </div>
+  )
 
 const page = () => {
   return (
@@ -8,7 +19,7 @@ const page = () => {
         <h5 className='intro'>Ajajanas from Salt jfs-2022</h5>
         <div className='about-page-layout'>
         <div className='profiles'>
-            <img className='profile-picture' src={require('../../public/Jak.png')} alt="Picture of Jak"/>
+            <Jak/>
             <h3>Jakhongir Burkhonov</h3>
             <p>I am 27 year old, enthusiastic, driven and adaptable Full-Stack Java developer, Graduate of School of Applied Technology.
                 I am a logical and strategic thinker with varied technical expertise, and I take pride in my strong attention to detail and problem-solving skills. </p>
