@@ -1,4 +1,5 @@
 package com.example.squizajajanasbackend.controller;
+import com.example.squizajajanasbackend.dto.UserDTO;
 import com.example.squizajajanasbackend.model.user.User;
 import com.example.squizajajanasbackend.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,30 +25,19 @@ public class Controller {
     }
 
     @PostMapping("/user")
-    public ResponseEntity<?> saveUser(@RequestBody User user){
-        return ResponseEntity.ok(service.saveUser(user));
+    public ResponseEntity<?> saveUser(@RequestBody UserDTO userdto){
+
+        User user = service.getUserByEmail(userdto.email());
+        if (user != null){
+            return ResponseEntity.ok(user);
+        }
+
+        return ResponseEntity.ok(service.saveUser(userdto));
     }
 
-    @PostMapping("/test")
-    public ResponseEntity<?> testUser (@RequestBody String body) {
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>" + body);
-       return ResponseEntity.ok().body(body);
+    @GetMapping("/user/{email}")
+    public ResponseEntity<User> getUserById(@PathVariable String email) {
+        return ResponseEntity.ok(service.getUserByEmail(email));
     }
-
-    @GetMapping("/user/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable String userId) {
-        return ResponseEntity.ok(service.getUserById(userId));
-    }
-
-    @DeleteMapping("/user/{id}")
-    public ResponseEntity<?> deleteUser(@PathVariable String userId) {
-        service.deleteUser(userId);
-        return ResponseEntity.ok("User has been deleted");
-    }
-    
-
-
-
-
 
 }

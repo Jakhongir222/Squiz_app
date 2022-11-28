@@ -1,26 +1,25 @@
 "use client";
-import React, {use, useEffect} from 'react';
+import React, {use, useEffect, useRef} from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react'
 
 
 export default function Component({ children }) {
-  const { data: session } = useSession();
-
-  console.log(session);
- 
+  const { data: session } = useSession(); 
+  const hasSentData = useRef(false);
 
   useEffect(() => {
-    if(session) {
-      console.log(">>>>>>", session.accessToken)
+    if(session && hasSentData) {
+      hasSentData.current = true;
+      const requestData = {'email': session.user.email, 'name': session.user.name}
+
       const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(session)
+        body: JSON.stringify(requestData)
     };
-      fetch('http://localhost:8080/category/test', requestOptions)
-      .then(res => {console.log(">>>>>>>>>>>>>>res1:", res); return res})
+      fetch('http://localhost:8080/category/user', requestOptions)
       .then(response => JSON.stringify(response))
-      .then(data => console.log(">>>>>>>>>>>>>>>>>>>>>>>res2", data));
+      .then(data => console.log(data));
      }
   }, [session]);
 

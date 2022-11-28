@@ -15,12 +15,8 @@ public class UserRepo {
         return repo.save(user);
     }
 
-    public Optional<Object> findById(String userId) {
-        return Optional.of(repo.findById(userId));
-    }
-
-    public void deleteById(String userId) {
-        repo.deleteById(userId);
+    public User getByEmail(String email){
+        return repo.findFirstUserByEmail(email);
     }
 }
 

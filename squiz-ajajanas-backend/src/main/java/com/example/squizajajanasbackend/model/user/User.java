@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name= "User_table")
+@Table(name= "user_table")
 public class User {
 
     @Id
@@ -14,21 +14,18 @@ public class User {
             name = "UUID",
             strategy = "org.hibernate.id.UUIDGenerator"
     )
-    @Column(name="Users_Id")
+    @Column(name = "user_id")
     private String userId;
 
-    @Column(name="Users_Name")
+    @Column(name = "user_name")
     private String name;
-    @Column (name="Users_email")
-    private Long email;
-    @Column
-    private Long password;
+    @Column(name = "user_email")
+    private String email;
 
-    public User(String userId, String name, Long email, Long password) {
+    public User(String userId, String name, String email) {
         this.userId = userId;
         this.name = name;
         this.email = email;
-        this.password = password;
     }
 
     public User() {
@@ -50,19 +47,11 @@ public class User {
         this.name = name;
     }
 
-    public Long getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Long email) {
+    public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Long getPassword() {
-        return password;
-    }
-
-    public void setPassword(Long password) {
-        this.password = password;
     }
 }
