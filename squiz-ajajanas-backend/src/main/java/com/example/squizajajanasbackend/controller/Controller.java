@@ -23,9 +23,6 @@ public class Controller {
         return ResponseEntity.ok(service.getAllCategories());
     }
 
-
-
-
     @PostMapping("/user")
     public ResponseEntity<?> saveUser(@RequestBody User user){
         return ResponseEntity.ok(service.saveUser(user));
