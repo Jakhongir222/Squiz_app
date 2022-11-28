@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 @CrossOrigin
 @RestController
 @RequestMapping("/category")
@@ -15,9 +14,9 @@ public class Controller {
     @Autowired
     Service service;
 
-    @PostMapping("/{categoryId}/submit")
-    public ResponseEntity<?> submitQuizScore(@PathVariable String categoryId, @RequestBody QuizSubmitDTO dto) {
-        return ResponseEntity.ok(service.submitScore(dto, categoryId));
+    @PostMapping("/{categoryId}/submit/{email}")
+    public ResponseEntity<?> submitQuizScore(@PathVariable String categoryId, @RequestBody QuizSubmitDTO dto, @PathVariable String email) {
+        return ResponseEntity.ok(service.submitScore(dto, categoryId, email));
     }
 
     @GetMapping("/{categoryId}")

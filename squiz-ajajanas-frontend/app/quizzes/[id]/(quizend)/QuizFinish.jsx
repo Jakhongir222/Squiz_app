@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Timeline from './Timeline';
+import { useSession } from 'next-auth/react'
+
 
 function QuizFinish( {props} ) {
+  const { data: session } = useSession(); 
+
   const [scores, questions, answers, time, streaks, categoryId] = props;
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
@@ -9,7 +13,7 @@ function QuizFinish( {props} ) {
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/category/${categoryId}/submit`, {
+    fetch(`http://localhost:8080/category/${categoryId}/submit/${session.user.email}`, {
       headers: { 
         'Accept': 'application/json',
         'Content-Type': 'application/json'

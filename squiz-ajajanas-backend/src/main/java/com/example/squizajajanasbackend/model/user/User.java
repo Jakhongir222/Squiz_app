@@ -1,8 +1,10 @@
 package com.example.squizajajanasbackend.model.user;
 
+import com.example.squizajajanasbackend.model.Score;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name= "user_table")
@@ -21,6 +23,10 @@ public class User {
     private String name;
     @Column(name = "user_email")
     private String email;
+
+    @OneToMany(cascade = {CascadeType.MERGE})
+    @JoinColumn(name = "user_id")
+    private List<Score> scores = new java.util.ArrayList<>();
 
     public User(String userId, String name, String email) {
         this.userId = userId;
@@ -53,5 +59,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Score> getScores() {
+        return scores;
+    }
+
+    public void setScores(List<Score> scores) {
+        this.scores = scores;
     }
 }

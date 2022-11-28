@@ -2,7 +2,6 @@ package com.example.squizajajanasbackend.service;
 
 import com.example.squizajajanasbackend.dto.UserDTO;
 import com.example.squizajajanasbackend.dto.QuizSubmitDTO;
-import com.example.squizajajanasbackend.model.Answer;
 import com.example.squizajajanasbackend.model.Category;
 import com.example.squizajajanasbackend.model.Question;
 import com.example.squizajajanasbackend.model.Score;
@@ -39,8 +38,14 @@ public class Service {
         return userRepo.getByEmail(email);
     }
 
-    public Object submitScore(QuizSubmitDTO dto, String categoryId) {
+    public Object submitScore(QuizSubmitDTO dto, String categoryId, String email) {
         Score score = ScoreConverter.createScoreFromDto(dto);
+
+        User user = userRepo.getByEmail(email);
+        List<Score> scores = user.getScores();
+        scores.add(score);
+        user.setScores(scores);
+        userRepo.save(user);
 
         Category category = repo.getCategoryById(categoryId).get();
         List<Question> questionList = ScoreConverter.createQuestionsFromDto(dto, category);

@@ -24,7 +24,7 @@ public class Category {
     @JoinColumn(name = "category_id")
     private List<Question> questions;
 
-    @OneToMany(cascade = {CascadeType.ALL})
+    @OneToMany(cascade = {CascadeType.MERGE})
     @JoinColumn(name = "category_id")
     private List<Score> scores = new java.util.ArrayList<>();
 

@@ -1,5 +1,6 @@
 package com.example.squizajajanasbackend.model;
 
+import com.example.squizajajanasbackend.model.user.User;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
