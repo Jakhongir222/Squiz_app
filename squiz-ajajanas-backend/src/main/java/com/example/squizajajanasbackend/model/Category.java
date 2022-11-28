@@ -24,6 +24,18 @@ public class Category {
     @JoinColumn(name = "category_id")
     private List<Question> questions;
 
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "category_id")
+    private List<Score> scores = new java.util.ArrayList<>();
+
+    public List<Score> getScores() {
+        return scores;
+    }
+
+    public void setScores(List<Score> scores) {
+        this.scores = scores;
+    }
+
     public Category() {
     }
 
@@ -55,5 +67,15 @@ public class Category {
 
     public void setQuestions(List<Question> questions) {
         this.questions = questions;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "categoryId='" + categoryId + '\'' +
+                ", categoryName='" + categoryName + '\'' +
+                ", questions=" + questions +
+                ", scores=" + scores +
+                '}';
     }
 }

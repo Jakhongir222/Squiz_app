@@ -1,5 +1,6 @@
 package com.example.squizajajanasbackend.controller;
 import com.example.squizajajanasbackend.dto.UserDTO;
+import com.example.squizajajanasbackend.dto.QuizSubmitDTO;
 import com.example.squizajajanasbackend.model.user.User;
 import com.example.squizajajanasbackend.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,11 @@ import org.springframework.web.bind.annotation.*;
 public class Controller {
     @Autowired
     Service service;
+
+    @PostMapping("/{categoryId}/submit")
+    public ResponseEntity<?> submitQuizScore(@PathVariable String categoryId, @RequestBody QuizSubmitDTO dto) {
+        return ResponseEntity.ok(service.submitScore(dto, categoryId));
+    }
 
     @GetMapping("/{categoryId}")
     public ResponseEntity<?> getCategory(@PathVariable String categoryId) {
