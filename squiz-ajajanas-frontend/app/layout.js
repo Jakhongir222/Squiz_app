@@ -12,10 +12,9 @@ export default function RootLayout({ children }) {
       <head></head>
       <body>
         <Providers>
-        <ul className="navbar">
-        <li><Navbar/></li>
-       <li><main className="">{children}</main></li> 
-        </ul>
+          <Navbar/>
+          <main>{children}</main>
+          <Footer/>
         </Providers>
       </body>
     </html>

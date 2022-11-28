@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import "../../styles/layout.css" 
+import "../../styles/QuizCategories.css" 
 
 function MyQuizzesComponent() {
 
@@ -20,7 +20,7 @@ function MyQuizzesComponent() {
     <div className='categories'>
       {Object.keys(categoryList).map((category, index) => {
         return (
-          <a className='categoryName' key={index} href={`quizzes/${categoryList[category]}`}>
+          <a className='category-name' key={index} href={`quizzes/${categoryList[category]}`}>
             <img src="https://thispersondoesnotexist.com/image" width="200"/>
             <div  key={index}>
              {category}

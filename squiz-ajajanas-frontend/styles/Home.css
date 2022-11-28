@@ -1,0 +1,33 @@
+.home-page {
+    background-color: var(--secondary-dark-color);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcoming-quote {
+    color: var(--secondary-dark-color);
+    display: flex;
+    font-size: 20px;
+}
+
+.pick-category-button {
+    
+    background-color: var(--button-secondary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.pick-category-button:active {
+    background-color: var(--white-text-color);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

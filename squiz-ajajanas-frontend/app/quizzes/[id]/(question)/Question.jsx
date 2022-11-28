@@ -1,6 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import "../../../../styles/layout.css"
 import { v4 as uuidv4 } from 'uuid';
+import "../../../../styles/Quiz.css"
 import QuestionImage from './QuestionImage';
 
 function Question( {currentQuestion, goToNextQuestion, streak, score} ) {

@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import QuestionController from './(question)/QuestionController';
 import QuizFinish from './(quizend)/QuizFinish';
 import Timeline from './(quizend)/Timeline';
