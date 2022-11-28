@@ -3,20 +3,10 @@ import "../styles/layout.css";
 import Image from 'next/image'
 
 
-const Example = () => (
-  <div className="Logo">
-    <Image
-      src="/../public/logo.png"
-      width={500}
-      height={200}
-    />
-  </div>
-)
-
 function navbar() {
   return (
     <div>
-       <Example/>
+       <Image className='Logo' src="/logo.png" width="500" height="200" alt="Logo"/>
         <div className='navbar'>
           <a href='/'><button className='navbar-button'>Home</button></a>
           <a href='/about'><button className='navbar-button'>About</button></a>

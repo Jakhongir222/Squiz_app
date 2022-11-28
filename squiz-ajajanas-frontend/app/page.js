@@ -1,10 +1,8 @@
 'use client'
 
-import React, {useState, useEffect} from 'react';
+import React, {} from 'react';
 import "../styles/Home.css";
 import LoginBtn from "./login-btn";
-import Head from 'next/head';
-import Providers from './providers';
 
 function homepage() {
 
@@ -20,7 +18,7 @@ function homepage() {
       <a href='/quizzes'>
       <button onClick={play} className='pick-category-button'>Pick a Quiz Category</button>
       <audio id='a1'>
-      <source src='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' type='audio/mpeg'/>
+      <source src="/win.mp3" type='audio/mpeg'/>
       </audio>
       </a>
     </div>

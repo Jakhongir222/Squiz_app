@@ -1,8 +1,7 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useEffect, useState} from 'react'
 import "../../../../styles/layout.css"
 import { v4 as uuidv4 } from 'uuid';
 import "../../../../styles/Quiz.css"
-import QuestionImage from './QuestionImage';
 
 function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   const timerlength = 10;
@@ -35,12 +34,15 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
     return () => clearInterval(interval);
   }, [countdown])
 
-  function play() {
+  function correctSound() {
     var audio = document.getElementById('a1');
     audio.play();
   }
 
-  
+  function wrongSound () {
+    var audio = document.getElementById('a2');
+    audio.play();
+  }
 
   return (
     <div>
@@ -52,14 +54,14 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
           <>
-          <button className='answer-button' key={index} onClick={()=>{ handleSubmitAnswer(answer); play();}}>
+          <button className='answer-button' key={index} onClick={()=>{ handleSubmitAnswer(answer); correctSound();}}>
             {answer.answer}
           </button>
           <audio id='a1'>
-              <source src='https://s17.aconvert.com/convert/p3r68-cdx67/5kn73-mou3u.mp3' type='audio/mpeg' />
+              <source src="/correct.wav" type='audio/mpeg' />
           </audio>
-          <audio id='a1'>
-              <source src='https://s21.aconvert.com/convert/p3r68-cdx67/2smb8-tt2ia.mp3' type='audio/mpeg' />
+          <audio id='a2'>
+              <source src="wrong.mp3" type='audio/mpeg' />
           </audio>
             </>
         );
