@@ -35,6 +35,24 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
     return () => clearInterval(interval);
   }, [countdown])
 
+  function playCorrectSound() {
+    var audio = document.getElementById('a1');
+    audio.play();
+  }
+  function playInorrectSound() {
+    var audio = document.getElementById('a2');
+    audio.play();
+  }
+
+  function toClick (answer, givenAnswer, currentQuestion) {
+    handleSubmitAnswer(answer);
+    if (givenAnswer === currentQuestion.wrongAnswers[0]) {playCorrectSound();}
+    else {
+      playInorrectSound();
+    }
+    
+  }
+
   return (
     <div>
       <div className='question'>{currentQuestion.question}</div>
@@ -44,9 +62,17 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
       {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
-          <button className='answer-button' key={index} onClick={() => handleSubmitAnswer(answer)}>
+          <>
+          <button className='answer-button' key={index} onClick={toClick}>
             {answer.answer}
           </button>
+          <audio id='a1'>
+              <source src='https://s21.aconvert.com/convert/p3r68-cdx67/vqmrn-c4e0j.mp3' type='audio/mpeg' />
+          </audio>
+          <audio id='a2'>
+              <source src='https://s27.aconvert.com/convert/p3r68-cdx67/upxfw-y6g0e.mp3' type='audio/mpeg' />
+          </audio>
+            </>
         );
       })}</div>
     </div>
