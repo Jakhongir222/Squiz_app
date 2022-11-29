@@ -45,5 +45,5 @@ public class Controller {
     public ResponseEntity<User> getUserById(@PathVariable String email) {
         return ResponseEntity.ok(service.getUserByEmail(email));
     }
-    
+
 }
