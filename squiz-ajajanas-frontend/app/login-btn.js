@@ -23,17 +23,6 @@ export default function Component({ children }) {
      }
   }, [session]);
 
-  // // const createUser = (session) => {
-  //   const requestOptions = {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify(session) 
-  //   };
-    
-  //   fetch('http://localhost:8080/', requestOptions)
-  //   .then(response => response.json())
-  //   .then(data => setThoughts([data, ...session]))
-  // }
 
   if (session) {
     return (

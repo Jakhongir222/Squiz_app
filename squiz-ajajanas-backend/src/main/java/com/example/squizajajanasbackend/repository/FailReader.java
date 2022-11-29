@@ -1,6 +1,7 @@
 package com.example.squizajajanasbackend.repository;
 
 import com.example.squizajajanasbackend.model.Category;
+import com.example.squizajajanasbackend.model.Info;
 import com.example.squizajajanasbackend.model.Question;
 import com.example.squizajajanasbackend.model.Answer;
 import com.example.squizajajanasbackend.populate.FileReaderDTO;
@@ -44,8 +45,13 @@ public class FailReader {
             List<Answer> answerList = Arrays.stream(dto.answers())
                     .map(answer-> new Answer(UUID.randomUUID().toString(), answer)).toList();
 
+
+            List<Info> infoList = Arrays.stream((dto.info()))
+                    .map(info -> new Info(UUID.randomUUID().toString(), info)).toList();
+
             String questionId = UUID.randomUUID().toString();
-            Question question = new Question(questionId, dto.question(), answerList);
+            Question question = new Question(questionId, dto.question(), answerList, infoList);
+
 
             if (map.containsKey(dto.category())){
                 List<Question> mapList = map.get(dto.category());
@@ -56,7 +62,6 @@ public class FailReader {
                 questionList.add(question);
                 map.put(dto.category(), questionList);
             }
-
         });
 
         map.forEach((key, value) -> {

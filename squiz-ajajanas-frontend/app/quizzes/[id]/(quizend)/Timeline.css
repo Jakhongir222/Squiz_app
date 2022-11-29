@@ -1,4 +1,5 @@
 .timeline {
+  border: solid 10px black;
   display: flex;
   flex-direction: row;
   background-color: darkgray;
@@ -9,6 +10,7 @@
 }
 
 .question-box {
+  border: 10px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +30,7 @@
 }
 
 .question-box-content {
+  border: 10px solid yellow;
   position: relative;
   border-bottom: solid;
   width: 100%;
@@ -42,6 +45,7 @@
 
 
 .question-box-tag {
+  border: 10px solid red;
   justify-content: center;
   align-items: center;
 }

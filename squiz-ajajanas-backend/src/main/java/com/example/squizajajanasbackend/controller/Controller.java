@@ -1,6 +1,7 @@
 package com.example.squizajajanasbackend.controller;
 import com.example.squizajajanasbackend.dto.UserDTO;
 import com.example.squizajajanasbackend.dto.QuizSubmitDTO;
+import com.example.squizajajanasbackend.model.Info;
 import com.example.squizajajanasbackend.model.user.User;
 import com.example.squizajajanasbackend.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,5 +45,5 @@ public class Controller {
     public ResponseEntity<User> getUserById(@PathVariable String email) {
         return ResponseEntity.ok(service.getUserByEmail(email));
     }
-
+    
 }

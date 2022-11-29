@@ -26,7 +26,7 @@ function QuizFinish( {props} ) {
 
   return (
     <div>
-      <Timeline props={props} />
+      <Timeline props={props}/>
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>
       <ul>{questions.map((q, index) => {

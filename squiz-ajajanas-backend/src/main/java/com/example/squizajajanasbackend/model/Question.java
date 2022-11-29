@@ -25,6 +25,10 @@ public class Question {
     @OneToMany(cascade=CascadeType.ALL)
     private List<Answer> answers;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name="question_id")
+    private List<Info> info;
+
     @Column(name="correct_answers_given")
     private int correctAnswersGiven = 0;
 
@@ -35,10 +39,11 @@ public class Question {
 //    private int percentageCorrect = 0;
 
 
-public Question(String questionId, String question, List<Answer> answers) {
+public Question(String questionId, String question, List<Answer> answers, List<Info> info) {
         this.questionId = questionId;
         this.question = question;
         this.answers = answers;
+        this.info = info;
     }
 
     public Question(String questionId, String question, List<Answer> answers, int correctAnswersGiven, int totalAnswersGiven) {
@@ -50,6 +55,14 @@ public Question(String questionId, String question, List<Answer> answers) {
     }
 
     public Question() {
+    }
+
+    public List<Info> getInfo() {
+        return info;
+    }
+
+    public void setInfo(List<Info> info) {
+        this.info = info;
     }
 
     public String getQuestionId() {
