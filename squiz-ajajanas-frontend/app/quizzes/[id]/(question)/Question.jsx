@@ -44,6 +44,18 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
     audio.play();
   }
 
+  function handleTheClick (answer, currentQuestion) {
+    handleSubmitAnswer(answer);
+    if(answer === currentQuestion.wrongAnswers[0]){
+      console.log('correct')
+      correctSound();
+    }else {
+      console.log('wrong')
+
+      wrongSound();
+    }
+  }
+
   return (
     <div>
       <div className='question'>{currentQuestion.question}</div>
@@ -54,14 +66,14 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
           <>
-          <button className='answer-button' key={index} onClick={()=>{ handleSubmitAnswer(answer); correctSound();}}>
+          <button className='answer-button' key={index} onClick={()=> handleTheClick(answer, currentQuestion)}>
             {answer.answer}
           </button>
           <audio id='a1'>
               <source src="/correct.wav" type='audio/mpeg' />
           </audio>
           <audio id='a2'>
-              <source src="wrong.mp3" type='audio/mpeg' />
+              <source src="/wrong.mp3" type='audio/mpeg' />
           </audio>
             </>
         );

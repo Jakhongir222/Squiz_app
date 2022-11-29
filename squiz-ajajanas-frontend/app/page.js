@@ -7,7 +7,7 @@ import LoginBtn from "./login-btn";
 function homepage() {
 
   function play() {
-    var audio = document.getElementById('a1');
+    var audio = document.getElementById('b1');
     audio.play();
   }
   
@@ -17,7 +17,7 @@ function homepage() {
     <p classname= 'welcoming-quote'> Are you ready to Squiz your knowledge ?</p>
       <a href='/quizzes'>
       <button onClick={play} className='pick-category-button'>Pick a Quiz Category</button>
-      <audio id='a1'>
+      <audio id='b1'>
       <source src="/win.mp3" type='audio/mpeg'/>
       </audio>
       </a>
