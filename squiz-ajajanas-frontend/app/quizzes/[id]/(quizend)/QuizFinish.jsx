@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Timeline from './Timeline';
 import { useSession } from 'next-auth/react'
 import ScoreGraph from './ScoreGraph';
@@ -45,7 +45,6 @@ function QuizFinish( {props} ) {
         color = (answers[index].answer === q.wrongAnswers[0].answer) ? '#0f0': '#f00';
         let difficulty = 0;
         if (res){
-          console.log(res);
           let i = res.questions.map(q => q.questionId).indexOf(q.questionId);
           let correct = res.questions[i].correctAnswersGiven;
           let total = res.questions[i].totalAnswersGiven;
