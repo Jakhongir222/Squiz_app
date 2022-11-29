@@ -39,6 +39,7 @@ function QuizFinish( {props} ) {
     <div>
       <ScoreGraph props={scoreGraphProps}/>
       <Timeline props={props} />
+      {/*
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>
       <ul>{questions.map((q, index) => {
@@ -71,6 +72,7 @@ function QuizFinish( {props} ) {
           </li>)
       })}</ul>
     <a href="/quizzes"> Another test? </a>
+    */}
     </div>
   )
   
