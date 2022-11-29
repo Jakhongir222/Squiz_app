@@ -20,7 +20,7 @@ public class Info {
     @Column(name="info_id")
     private String infoId;
 
-    @Column(name="info")
+    @Column(name="info", length = 500)
     private String info;
 
 

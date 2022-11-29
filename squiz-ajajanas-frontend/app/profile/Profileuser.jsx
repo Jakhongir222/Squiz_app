@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { useSession } from 'next-auth/react'
+import Histogram from './Histogram';
 
 function ProfileUser() {
   const { data: session } = useSession(); 
@@ -21,7 +22,10 @@ function ProfileUser() {
   }
 
   return (
-    <div>{user.name}</div>
+    <div>
+      <div><Histogram/></div>
+      <div>{user.name}</div>
+    </div>
   )
 }
 
