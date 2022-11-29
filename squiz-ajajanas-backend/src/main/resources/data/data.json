@@ -111,5 +111,765 @@
       "Mount Rushmore"
     ],
     "info": ["Mount Chimborazo is the closest place on earth to the moon. This is because of a bulge on the earth where the mountain is located on, makes it the point closest to 'outer space'."]
-  }
-  ]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "In the state of Georgia, it’s illegal to eat what with a fork?",
+    "answers": [
+      "Fried chicken",
+      "Pork",
+      "McDonalds",
+      "Pizza"
+    ],
+    "info": ["Yes, in Gainesville, Georgia, you can get arrested for eating fried chicken with anything but your hands. In 1961, Gainesville passed a law making it illegal to use fork to eat fried chicken as a way to promote Gainesville as a “poultry capital of the world”."]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "When was “OMG” first used?",
+    "answers": [
+      "1917",
+      "1940",
+      "1967",
+      "1988"
+    ],
+    "info": ["O.M.G.!! The first attested use of this was in a letter from John Fisher, 1st Baron Fisher to Winston Churchill in 1917."]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal has the largest eyes in the world?",
+    "answers": [
+      "Colossal Squid",
+      "Whale",
+      "Shark",
+      "Elephant"
+    ],
+    "info": ["Researchers say that colossal squid (Mesonychoteuthis hamiltoni) have the largest eyes ever studied in the animal kingdom. Measuring 27cm in diameter, each eye is roughly the size of a soccer ball! "]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal can not stick their tongue out?",
+    "answers": [
+      "Crocodile",
+      "Koala",
+      "Turtle",
+      "Spider"
+    ],
+    "info": ["Crocodiles can not stick out their tongue or chew"]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "Whose eyes are bigger than its brain?",
+    "answers": [
+      "Ostrich",
+      "Fly",
+      "Tarsier",
+      "Snake"
+    ],
+    "info": ["An ostrich's eye is bigger than its brain. Compared to other birds, ostriches aren't the smartest, but they have excellent eyesight."]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What was the last letter added to the English alphabet?",
+    "answers": [
+      "J",
+      "Z",
+      "W",
+      "Y"
+    ],
+    "info": ["“Z” may be the last letter in alphabetical order, but the last letter added  was actually “J.”"]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "Where were Doritos invented?",
+    "answers": [
+      "Casa de Fritos at Disneyland",
+      "Casa de deliciosa Puerto Rico",
+      "Case de grande Mexico",
+      "Taco bell in Florida"
+    ],
+    "info": ["The original product was made at the Casa de Fritos (now Rancho Del Zocalo) at Disneyland in Anaheim, California, during the early 1960s."]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What animal's heart is located in its head?",
+    "answers": [
+      "Shrimp",
+      "Seahorse",
+      "Plancton",
+      "Sea Monkey"
+    ],
+    "info": ["A shrimp has it's heart on its head. Looking at the anatomy of a shrimp we can see that its heart is located behind the brain."]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What  is Odontophobia?",
+    "answers": [
+      "Fear of teeth",
+      "Fear of darkness",
+      "Fear of deep water",
+      "Fear of height"
+    ],
+    "info": ["People with odontophobia, also called dentophobia, have a fear of dentists. "]
+  },
+  {
+    "category": "Random fun facts",
+    "question": "What is the only animal that can’t jump?",
+    "answers": [
+      "Elephant",
+      "Hippopotamus",
+      "Giraffe",
+      "Snake"
+    ],
+    "info": ["Elephant, in fact, it's impossible. Unlike most mammals, the bones in elephant legs are all pointed downwards, which means they don't have the 'spring' required to push off the ground."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "Who was the Ancient Greek God of the Sun?",
+    "answers": [
+      "Apollo",
+      "Athena",
+      "Hera",
+      "Hestia"
+    ],
+    "info": ["Apollo was the god of practically everything – including sun and light (although the god is always associated with the sun, the original sun god was the titan Helios, but everyone forgot about him)."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What year was the United Nations established?",
+    "answers": [
+      "1945",
+      "1941",
+      "1918",
+      "1955"
+    ],
+    "info": ["Four months after the San Francisco Conference ended, the United Nations officially began, on 24 October 1945."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What artist has the most streams on Spotify?",
+    "answers": [
+      "Drake",
+      "Eminem",
+      "Beyonce",
+      "Rihanna"
+    ],
+    "info": [" Drake is the most-streamed male artist of all time, "]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What is a group of crows called?",
+    "answers": [
+      "Murder",
+      "Flock",
+      "Herd",
+      "Group"
+    ],
+    "info": ["A group of crows is called a “murder.” There are several different explanations for the origin of this term, mostly based on old folk tales and superstitions."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many elements are in the periodic table?",
+    "answers": [
+      "118",
+      "109",
+      "106",
+      "111"
+    ],
+    "info": ["with 118 known elements, periodic table is widely regarded as one of the most significant achievements in science."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What country drinks the most coffee per capita?",
+    "answers": [
+      "Finland",
+      "Sweden",
+      "Norway",
+      "Denmark"
+    ],
+    "info": ["Finland is the world's biggest consumer of coffee on a per-person basis. The average Finn drinks nearly four cups a day."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "Which planet in the solar system is the hottest?",
+    "answers": [
+      "Venus",
+      "Mars",
+      "Saturn",
+      "Mercury"
+    ],
+    "info": ["Even though Mercury is closer to the Sun, Venus is the hottest planet with an average temperature of 464 degree Celsius!"]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many bones do we have in an ear?",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "None"
+    ],
+    "info": ["3 bones are present in the ear ossicles namely, stapes, incus and malleus. The ossicles are also known as auditory ossicles."]
+  },
+  {
+    "category": "General knowledge",
+    "question": "What country has won the most World Cups?",
+    "answers": [
+      "Brazil",
+      "Argentina",
+      "Germany",
+      "Italy"
+    ],
+    "info": ["Brazil are the most successful nation in World Cup history and have won the famous trophy five times!!"]
+  },
+  {
+    "category": "General knowledge",
+    "question": "How many hearts does an octopus have?",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "info": ["An octopus's three hearts have slightly different roles. One heart circulates blood around the body, while the other two pump it past the gills, to pick up oxygen."]
+  },
+  {
+    "category": "History",
+    "question": "When did the first world war begin?",
+    "answers": [
+      "1914",
+      "1916",
+      "1918",
+      "1915"
+    ],
+    "info": ["World War I began in 1914, after the assassination of Archduke Franz Ferdinand, and lasted until 1918"]
+  },
+  {
+    "category": "History",
+    "question": "The German attack on which country caused Britain to enter the Second World War?",
+    "answers": [
+      "Poland",
+      "Spain",
+      "France",
+      "Slovakia"
+    ],
+    "info": ["Invation of Poland, on 1 September 1939!"]
+  },
+  {
+    "category": "History",
+    "question": "Who was the world’s first woman Prime Minister?",
+    "answers": [
+      "Sirimavo Bandaranaike",
+      "Indira Gandhi",
+      "Golda Meir",
+      "Margeret Thatcher"
+    ],
+    "info": ["Sirimavo Bandaranaike was elected as the world's first female Prime Minister on 21 July 1960!"]
+  },
+  {
+    "category": "History",
+    "question": "In what year was the Russian Revolution?",
+    "answers": [
+      "1917",
+      "1990",
+      "1912",
+      "1945"
+    ],
+    "info": ["The Russian Revolution of 1917"]
+  },
+  {
+    "category": "History",
+    "question": "Who assassinated Abraham Lincoln?",
+    "answers": [
+      "John Wilkes Booth",
+      "John Travolta",
+      "Jonatan Ieloish",
+      "John Smith"
+    ],
+    "info": ["On April 14, 1865, Abraham Lincoln, the 16th president of the United States, was assassinated by well-known stage actor John Wilkes Booth!"]
+  },
+  {
+    "category": "History",
+    "question": "When Titanic sank?",
+    "answers": [
+      "1912",
+      "1913",
+      "1914",
+      "1915"
+    ],
+    "info": ["May 31, 1911, 1,500 people died"]
+  },
+  {
+    "category": "History",
+    "question": "When was America discovered?",
+    "answers": [
+      "1492",
+      "1451",
+      "1506",
+      "1509"
+    ],
+    "info": ["1492, after five years later, some 25 to 50 million people were dead"]
+  },
+  {
+    "category": "History",
+    "question": "When did bubonic plague arrive in Europe?",
+    "answers": [
+      "1347",
+      "1375",
+      "1306",
+      "1379"
+    ],
+    "info": ["1347, Five years later, some 25 to 50 million people were dead"]
+  },
+  {
+    "category": "History",
+    "question": "When was Darwin's The Origin of Species published?",
+    "answers": [
+      "1859",
+      "1864",
+      "1875",
+      "1855"
+    ],
+    "info": ["November 24, 1859, it sold out in a matter of days."]
+  },
+  {
+    "category": "History",
+    "question": "When First Atomic Bomb used?",
+    "answers": [
+      "1945",
+      "1941",
+      "1875",
+      "1943"
+    ],
+    "info": ["1945, an American B-29 bomber dropped the world's first deployed atomic bomb over the Japanese city of Hiroshima"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is zero?",
+    "answers": [
+      "Even number",
+      "Odd number",
+      "Not a number",
+      "Neither odd nor even"
+    ],
+    "info": ["0 is a relatively new number, invented in india and brought to the west through the arabic number system"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the value of pi?",
+    "answers": [
+      "3.14",
+      "3.41",
+      "3.12",
+      "3.16"
+    ],"info": ["The symbol for pi comes from the greek alphabet, like many other mathematical symbols"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square root of 121?",
+    "answers": [
+      "11",
+      "13",
+      "17",
+      "15"
+    ],"info": ["The square root was invented in china, 200bc"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the bottom number in fraction called?",
+    "answers": [
+      "Denominator",
+      "Numerator",
+      "Decimal",
+      "Declarative"
+    ],"info": ["Not to be confused with the numerator"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "How many zeros in a million?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],"info": ["Rule of thumb: Add 3 for every change of word"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is a roman numeral for 100?",
+    "answers": [
+      "C",
+      "XI",
+      "M",
+      "LL"
+    ],"info": ["Roman numerals don't contain zero"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the name given to an angle that is less than 90 degrees?",
+    "answers": [
+      "Acute angle",
+      "Right angle",
+      "Straight angle",
+      "Reflex angle"
+    ],"info": ["Larger than 90% is called obtuse"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "How many sides does a dodecahedron have?",
+    "answers": [
+      "12",
+      "8",
+      "14",
+      "16"
+    ],"info": ["Comes from the latin dode meaning twelve"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the top number in a fraction called?",
+    "answers": [
+      "Numerator",
+      "Numeral",
+      "Denominator",
+      "Decimal"
+    ],"info": ["Not to be confused with the denominator"]
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is another name for the perimeter of a circle?",
+    "answers": [
+      "Circumference",
+      "Circumstance",
+      "Circular",
+      "Size"
+    ],"info": ["Whilst circles are circular, they are not circumferencular"]
+  },
+  {
+    "category": "Programming",
+    "question": "What DATA TYPE has only 2 possible values?",
+    "answers": [
+      "Boolean",
+      "Float",
+      "String",
+      "Integer"
+    ],
+    "info": ["It is boolean, It only takes , true or false"]
+  },
+  {
+    "category": "Programming",
+    "question": "In Java, a method is a container that holds classes",
+    "answers": [
+      "False",
+      "True",
+      "There is no container in Java",
+      "There is no class in Java"
+    ],
+    "info": ["In java we use methods but It doesn't contain the classes"]
+  },
+  {
+    "category": "Programming",
+    "question": "What does HTML stand for?",
+    "answers": [
+      "Hyper Text Markup Language",
+      "HyperText Make Language",
+      "HyperText Mark Language",
+      "Hyper Text Markup Leveler"
+    ],
+    "info": ["Hyper Text Markup Language, it was invented 1993"]
+  },
+  {
+    "category": "Programming",
+    "question": "How many bytes in a megabyte?",
+    "answers": [
+      "1000000",
+      "1024",
+      "100000",
+      "10000"
+    ],
+    "info": ["1000000 and one byte is equeal 8 bits"]
+  },
+  {
+    "category": "Programming",
+    "question": "What is a function calling itself based on a terminating condition?",
+    "answers": [
+      "Recursion",
+      "Promise",
+      "Callback",
+      "Repetition"
+    ],
+    "info": ["Recursion, it occurs when a thing is defined in terms of itself or of its type"]
+  },
+  {
+    "category": "Programming",
+    "question": "What is a linear data structure in which the elements are not necessarily stored in a contiguous manner?",
+    "answers": [
+      "Linked list",
+      "Data elements",
+      "List structure",
+      "Collection"
+    ],
+    "info": ["Linked list, In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list"]
+  },
+  {
+    "category": "Programming",
+    "question": "What is LIFO?",
+    "answers": [
+      "Last In First Out",
+      "Last In Fast Out",
+      "Latest In Fastest Out",
+      "Less In Faster Out"
+    ],
+    "info": ["Last In First Out, it is a method used to account for inventory that records the most recently produced items as sold first."]
+  },
+  {
+    "category": "Programming",
+    "question": "What does CSS stand for?",
+    "answers": [
+      "Cascading Style Sheets",
+      "Categorizing Style Sheets",
+      "Categorizing System Sheets",
+      "Cascading System Sheets"
+    ],
+    "info": ["Cascading Style Sheets, 1994- the idea of CSS was proposed"]
+  },
+  {
+    "category": "Programming",
+    "question": "What kind of error is it when the computer is directed to perform an illegal operation by the program?",
+    "answers": [
+      "Runtime error",
+      "Syntax error",
+      "Logic error",
+      "Technical error"
+    ],
+    "info": ["It is runtime error it occurs while a program is running or when you first attempt to start the application."]
+  },
+  {
+    "category": "Programming",
+    "question": "How many types of non-linear data structure exists?",
+    "answers": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "info": ["They are 4; Stacks, Queues, Arrays, and Linked lists"]
+  },
+  {
+    "category": "Logic",
+    "question": "If you count from 1 to 100, how many 7's will you pass on the way?",
+    "answers": [
+      "20",
+      "13",
+      "11",
+      "17"
+    ],
+    "info": ["The sum of all numbers from 1 to 100 is 5500"]
+  },
+  {
+    "category": "Logic",
+    "question": "If two typists can type two pages in two minutes, how many typists will it take to type 18 pages in 6 minutes?",
+    "answers": [
+      "6",
+      "3",
+      "12",
+      "18"
+    ],
+    "info": ["The typewriter was invented in 1868"]
+  },
+  {
+    "category": "Logic",
+    "question": "Divide 30 by half and add ten..",
+    "answers": [
+      "70",
+      "50",
+      "40,5",
+      "None of above"
+    ],
+    "info": ["Written out it's hard to solve, but in symbols its easy (30/0.5 + 10)"]
+  },
+  {
+    "category": "Logic",
+    "question": "A farmer has 17 sheep, all of them but 8 die. How many sheep are still standing?",
+    "answers": [
+      "8",
+      "9",
+      "25",
+      "35"
+    ],
+    "info": ["Farming was invented almost 10000 years ago"]
+  },
+  {
+    "category": "Logic",
+    "question": "There are 45 apples in your basket. You take three apples out of the basket. How many apples are left?",
+    "answers": [
+      "45",
+      "43",
+      "3",
+      "I don’t like apples"
+    ],
+    "info": ["Despite popular belief, apples come from central asia"]
+  },
+  {
+    "category": "Logic",
+    "question": "You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "None of above"
+    ],
+    "info": ["The true first racing with racecars was in 1895"]
+  },
+  {
+    "category": "Logic",
+    "question": "Which months have 28 days?",
+    "answers": [
+      "All of above",
+      "February",
+      "January",
+      "May"
+    ],
+    "info": ["Not counting leap years, of course"]
+  },
+  {
+    "category": "Logic",
+    "question": "Introducing a man, a woman said, He is the only son of the mother of my mother. How is the woman related to the man?",
+    "answers": [
+      "Niece",
+      "Maternal uncle",
+      "Nephew",
+      "Cousins"
+    ],
+    "info": ["Niece stems from iece like nuncle to uncle, niceunkle!"]
+  },
+  {
+    "category": "Logic",
+    "question": "Mary’s father has 5 daughters. The name of the 1st daughter is Nana, the 2nd daughter is Nunu, the 3rd daughter is Nini, and the 4th daughter is Nene. What is the name of the 5th daughter?",
+    "answers": [
+      "Mary",
+      "Nono",
+      "Nantia",
+      "Nina"
+    ],
+    "info": ["Mary stems from the new testament, 'mariam'"]
+  },
+  {
+    "category": "Logic",
+    "question": "I am four times as old as my daughter. In 20 years time I shall be twice as old as her. How old are we now?",
+    "answers": [
+      "40 and 10",
+      "32 and 8",
+      "28 and 7",
+      "60 and 15"
+    ],
+    "info": ["The first philisopher is believed to be damocles, who believed all things stem from water"]
+  },
+  {
+    "category": "Animals",
+    "question": "Which mammal is known to have the most powerful bite in the world?",
+    "answers": [
+      "Hippopotamus",
+      "Tiger",
+      "Lion",
+      "Crocodile"
+    ],
+    "info": ["The hippothalamus is the part of our brain responsible for reasoning"]
+  },
+  {
+    "category": "Animals",
+    "question": "How long is an elephant pregnant before it gives birth?",
+    "answers": [
+      "22 month",
+      "12 month",
+      "9 month",
+      "18 month"
+    ],
+    "info": ["Elephants can pain"]
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal is known to spend 90% of its day sleeping?",
+    "answers": [
+      "Koala",
+      "Sloth",
+      "Cat",
+      "Bear"
+    ],
+    "info": ["Sloths can actually be quite dangerous when threathened"]
+  },
+  {
+    "category": "Animals",
+    "question": "What color is the tongue of a giraffe?",
+    "answers": [
+      "Purple",
+      "Green",
+      "Black",
+      "Red"
+    ],
+    "info": ["Giraffes have spiky tongues. It's true!"]
+  },
+  {
+    "category": "Animals",
+    "question": "A baby goat is called what?",
+    "answers": [
+      "Kid",
+      "Goatee",
+      "Goatlet",
+      "Baby goat"
+    ],
+    "info": ["Goats were one of the first animals to be tamed by humans and were being herded 9,000 years ago"]
+  },
+  {
+    "category": "Animals",
+    "question": "What animal is the largest mammal in the world?",
+    "answers": [
+      "Blue Whale",
+      "Elephant",
+      "Rhino",
+      "Ostrich"
+    ],
+    "info": ["Ostrich eggs are very large, although smaller than a rhino"]
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal can move its eyes independently?",
+    "answers": [
+      "Chameleon",
+      "Snake",
+      "Crocodile",
+      "Turtle"
+    ],
+    "info": ["It is said that the entire world resides on a turtles back"]
+  },
+  {
+    "category": "Animals",
+    "question": "Where are a cricket’s ears located?",
+    "answers": [
+      "On their leg",
+      "On their stomach",
+      "On their back",
+      "On their elbows"
+    ],
+    "info": ["It is common knowledge that its impossible to lick your elbows, but you can't lick your back either (trust me)"]
+  },
+  {
+    "category": "Animals",
+    "question": "How many eyes do caterpillars have?",
+    "answers": [
+      "12",
+      "10",
+      "8",
+      "6"
+    ],
+    "info": ["Caterpillars be caterpillaring"]
+  },
+  {
+    "category": "Animals",
+    "question": "How many times do a bee’s wings beat per second?",
+    "answers": [
+      "190 times",
+      "140 times",
+      "120 times",
+      "80 times"
+    ],
+    "info": ["Despite common belief, bees are not the only pollinators and foods like Maize are not dependant on them"]
+  }]
