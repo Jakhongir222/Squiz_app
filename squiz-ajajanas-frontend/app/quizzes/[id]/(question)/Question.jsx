@@ -1,8 +1,7 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useEffect, useState} from 'react'
 import "../../../../styles/layout.css"
 import { v4 as uuidv4 } from 'uuid';
 import "../../../../styles/Quiz.css"
-import QuestionImage from './QuestionImage';
 
 function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   const timerlength = 10;
@@ -35,6 +34,28 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
     return () => clearInterval(interval);
   }, [countdown])
 
+  function correctSound() {
+    var audio = document.getElementById('a1');
+    audio.play();
+  }
+
+  function wrongSound () {
+    var audio = document.getElementById('a2');
+    audio.play();
+  }
+
+  function handleTheClick (answer, currentQuestion) {
+    handleSubmitAnswer(answer);
+    if(answer === currentQuestion.wrongAnswers[0]){
+      console.log('correct')
+      correctSound();
+    }else {
+      console.log('wrong')
+
+      wrongSound();
+    }
+  }
+
   return (
     <div>
       <div className='question'>{currentQuestion.question}</div>
@@ -44,9 +65,17 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
       {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
-          <button className='answer-button' key={index} onClick={() => handleSubmitAnswer(answer)}>
+          <>
+          <button className='answer-button' key={index} onClick={()=> handleTheClick(answer, currentQuestion)}>
             {answer.answer}
           </button>
+          <audio id='a1'>
+              <source src="/correct.wav" type='audio/mpeg' />
+          </audio>
+          <audio id='a2'>
+              <source src="/wrong.mp3" type='audio/mpeg' />
+          </audio>
+            </>
         );
       })}</div>
     </div>

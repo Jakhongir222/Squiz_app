@@ -18,8 +18,10 @@ function QuestionController( {quiz, finishQuiz} ) {
     if (givenAnswer === currentQuestion.wrongAnswers[0]){
       setScore(score + CalculateScore(streak, timeRemaining));
       setStreak(streak + 1);
+    
     } else {
       setStreak(0);
+
     }
     scores.current = [...scores.current, score];
     streaks.current = [...streaks.current, streak];
