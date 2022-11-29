@@ -12,5 +12,104 @@
       "K2, at 8,611 metres above sea level, is the second-highest mountain on Earth, after Mount Everest."
     ]
   }
-
-]
+,
+  {
+    "category": "Geography",
+    "question": "What type of leaf is on the Canadian flag?",
+    "answers": [
+      "Maple",
+      "Oak",
+      "Pinus",
+      "Plum"
+    ],
+    "info" : ["The specific design of the maple leaf that appears in the centre of the National Flag of Canada is known as the stylized 11-point maple leaf."]
+  },
+  {
+    "category": "Geography",
+    "question": "In which European city was the first organized marathon held?",
+    "answers": [
+      "Athens",
+      "Stockholm",
+      "Rome",
+      "Madrid"
+    ],
+    "info": ["The first organized marathon was held in Athens at the 1896 Olympics, the start of the Games' modern era."]
+  },
+  {
+    "category": "Geography",
+    "question": "What is the capital of Peru?",
+    "answers": [
+      "Lima",
+      "Ecuador",
+      "Santiago",
+      "Karakas"
+    ],
+    "info": ["Lima, the capital of Peru, is located at an elevation of 528 feet (161 meters) in the Central West part of Peru. "]
+  },
+  {
+    "category": "Geography",
+    "question": "In which city would you find La Sagrada Familia?",
+    "answers": [
+      "Barcelona",
+      "Mexico",
+      "Brasilia",
+      "Rio de Janeiro"
+    ],
+    "info": ["The Sagrada Família is Antoni Gaudí's best-known work and has become an undisputed symbol of Barcelona."]
+  },
+  {
+    "category": "Geography",
+    "question": "What country has the most natural lakes?",
+    "answers": [
+      "Canada",
+      "USA",
+      "Australia",
+      "Sweden"
+    ],
+    "info": ["About 9% of Canada's surface area is covered by lakes. The Great Bear Lake is the largest lake in Canada."]
+  },
+  {
+    "category": "Geography",
+    "question": "What is the only sea without any coasts?",
+    "answers": [
+      "Sargasso Sea",
+      "Adriatic sea",
+      "Celebes sea",
+      "Dead sea"
+    ],
+    "info": ["the Sargasso Sea is bounded to the west by the Gulf Stream; on the north, by the North Atlantic Current; on the east, by the Canary Current; and on the south, by the North Atlantic Equatorial Current."]
+  },
+  {
+    "category": "Geography",
+    "question": "What is the driest place on Earth?",
+    "answers": [
+      "Antarctica",
+      "Sahara",
+      "Kufra",
+      "Taklamakan"
+    ],
+    "info": ["The driest place on Earth is a location in Antarctica known as the “Dry Valleys.” It has not rained there for at least two million years."]
+  },
+  {
+    "category": "Geography",
+    "question": "Which African nation has the most pyramids?",
+    "answers": [
+      "Sudan",
+      "Egypt",
+      "Algeria",
+      "Morocco"
+    ],
+    "info": ["Yup, the country with the most pyramids in the world is Sudan,has between 200 to 255 known pyramids, compared to Egypt's 138."]
+  },
+  {
+    "category": "Geography",
+    "question": "What mountain is closest to the Moon?",
+    "answers": [
+      "Mount Chimborazo",
+      "Mount Everest",
+      "Mount Pandim",
+      "Mount Rushmore"
+    ],
+    "info": ["Mount Chimborazo is the closest place on earth to the moon. This is because of a bulge on the earth where the mountain is located on, makes it the point closest to 'outer space'."]
+  }
+  ]
