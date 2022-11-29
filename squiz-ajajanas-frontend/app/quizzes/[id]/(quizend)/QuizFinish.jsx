@@ -5,6 +5,7 @@ import ScoreGraph from './ScoreGraph';
 
 function QuizFinish( {props} ) {
   const { data: session } = useSession(); 
+  const hasSubmitted = useRef(false);
 
   const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData] = props;
 
@@ -14,21 +15,21 @@ function QuizFinish( {props} ) {
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    const requestData = {
-      headers: { 
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'},
-      method: 'POST',
-      body: JSON.stringify({questions, answers})
+    if(!hasSubmitted.current){
+      hasSubmitted.current = true;
+      const requestData = {
+        headers: { 
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'},
+        method: 'POST',
+        body: JSON.stringify({questions, answers})
+      }
+      
+      let url = `http://localhost:8080/category/${categoryId}/submit`;
+      if (session) url = url + `/${session.user.email}`;
+      fetch(url, requestData).then(data => data.json())
+        .then(data => setRes(data));
     }
-    
-    let url = `http://localhost:8080/category/${categoryId}/submit`;
-    if (session) url = url + `/${session.user.email}`;
-
-    console.log(url);
-
-    fetch(url, requestData).then(data => data.json())
-    .then(data => setRes(data));
   }, [])
 
   const questionsAnsweredCorrectly = [...streaks].map(s => s && 1).reduce((partial, a) => partial + a, 0);
