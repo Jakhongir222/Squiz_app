@@ -7,12 +7,12 @@ import Providers from './providers';
 import {useSession} from 'next-auth/react';
 
 function homepage() {
+  const { data: session } = useSession();
 
   function play() {
     var audio = document.getElementById('b1');
     audio.play();
   }
-  const { data: session } = useSession();
   
   if(session) {
     return (
