@@ -1,8 +1,10 @@
 import React from 'react'
+import ScoreGraph from './(quizend)/ScoreGraph'
 
 function QuizStart() {
+  
   return (
-    <div>QuizStart</div>
+    <div>Start quiz?</div>
   )
 }
 

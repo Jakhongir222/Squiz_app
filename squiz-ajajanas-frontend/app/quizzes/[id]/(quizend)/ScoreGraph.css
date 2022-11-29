@@ -1,0 +1,27 @@
+.bar-graph{
+  display: flex;
+  flex-direction: row;
+  background-color: darkgray;
+  align-items: flex-end;
+  width: 50vw;
+  height: 20vh;
+  gap: 0.5vw;
+  padding: 20px 10px 0px;
+}
+
+.score-col{
+  position: relative;
+  border-bottom: solid;
+  background:yellowgreen;
+  width: 100%;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  translate: 0% -120%;
+  font-size: 20px;
+  background: gray;
+  padding: 5px;
+  border: solid;
+}

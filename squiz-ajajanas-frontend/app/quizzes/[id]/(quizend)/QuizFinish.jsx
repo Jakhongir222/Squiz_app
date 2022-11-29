@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import Timeline from './Timeline';
 import { useSession } from 'next-auth/react'
+import ScoreGraph from './ScoreGraph';
 
 
 function QuizFinish( {props} ) {
   const { data: session } = useSession(); 
 
-  const [scores, questions, answers, time, streaks, categoryId] = props;
+  const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData] = props;
+
+  console.log(scoreCategoryData);
+
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
 
@@ -24,8 +28,12 @@ function QuizFinish( {props} ) {
     .then(data => setRes(data));
   }, [])
 
+  const questionsAnsweredCorrectly = [...streaks].map(s => s && 1).reduce((partial, a) => partial + a, 0);
+  const scoreGraphProps = [questionsAnsweredCorrectly, scoreCategoryData];
+
   return (
     <div>
+      <ScoreGraph props={scoreGraphProps}/>
       <Timeline props={props} />
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>

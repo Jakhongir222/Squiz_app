@@ -11,6 +11,7 @@ function Controller({categoryId}) {
   const [quizIsDone, setQuizIsDone] = useState(false);
   const [quizDetailProps, setQuizDetailProps] = useState();
   const [done, setDone] = useState(false);
+  const [scoreCategoryData, setScoreCategoryData] = useState({})
   
   //Number of questions per quiz
   const n = 10;
@@ -18,6 +19,10 @@ function Controller({categoryId}) {
   useEffect(() => {
     fetch(`http://localhost:8080/category/${categoryId}`)
       .then(data => data.json())
+      .then(data => {
+        setScoreCategoryData(data.scores);
+        return data;
+      })
       .then(data => {return {...data, questions: data.questions.sort(() => 0.5 - Math.random())}})
       .then(data => {return {...data, questions: data.questions.slice(0, n)}})
       .then(data => setQuiz(data))
@@ -25,7 +30,7 @@ function Controller({categoryId}) {
   },[categoryId]);
 
   const finishQuiz = (...props) => {
-    props = [...props, categoryId];
+    props = [...props, categoryId, scoreCategoryData];
     setQuizDetailProps({props});
     setQuizIsDone(true);
   }
