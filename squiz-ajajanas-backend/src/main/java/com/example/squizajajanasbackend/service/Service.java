@@ -57,4 +57,18 @@ public class Service {
         updatedCategory.setQuestions(responseQuestions);
         return updatedCategory;
     }
+
+    public Object submitScoreWithoutUser(QuizSubmitDTO dto, String categoryId) {
+        Score score = ScoreConverter.createScoreFromDto(dto);
+
+        Category category = repo.getCategoryById(categoryId).get();
+        List<Question> questionList = ScoreConverter.createQuestionsFromDto(dto, category);
+
+        repo.updateQuestionsInCategory(questionList, categoryId);
+
+        Category updatedCategory =  repo.addScoreToCategory(score, categoryId);
+        List<Question> responseQuestions = updatedCategory.getQuestions();
+        updatedCategory.setQuestions(responseQuestions);
+        return updatedCategory;
+    }
 }

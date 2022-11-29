@@ -3,13 +3,10 @@ import Timeline from './Timeline';
 import { useSession } from 'next-auth/react'
 import ScoreGraph from './ScoreGraph';
 
-
 function QuizFinish( {props} ) {
   const { data: session } = useSession(); 
 
   const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData] = props;
-
-  console.log(scoreCategoryData);
 
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
@@ -17,14 +14,20 @@ function QuizFinish( {props} ) {
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/category/${categoryId}/submit/${session.user.email}`, {
+    const requestData = {
       headers: { 
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
+        'Content-Type': 'application/json'},
       method: 'POST',
       body: JSON.stringify({questions, answers})
-    }).then(data => data.json())
+    }
+    
+    let url = `http://localhost:8080/category/${categoryId}/submit`;
+    if (session) url = url + `/${session.user.email}`;
+
+    console.log(url);
+
+    fetch(url, requestData).then(data => data.json())
     .then(data => setRes(data));
   }, [])
 
@@ -41,6 +44,7 @@ function QuizFinish( {props} ) {
         color = (answers[index].answer === q.wrongAnswers[0].answer) ? '#0f0': '#f00';
         let difficulty = 0;
         if (res){
+          console.log(res);
           let i = res.questions.map(q => q.questionId).indexOf(q.questionId);
           let correct = res.questions[i].correctAnswersGiven;
           let total = res.questions[i].totalAnswersGiven;

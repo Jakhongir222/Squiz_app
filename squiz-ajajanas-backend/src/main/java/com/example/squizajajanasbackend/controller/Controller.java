@@ -19,6 +19,11 @@ public class Controller {
         return ResponseEntity.ok(service.submitScore(dto, categoryId, email));
     }
 
+    @PostMapping("/{categoryId}/submit")
+    public ResponseEntity<?> submitQuizScoreWithoutUser(@PathVariable String categoryId, @RequestBody QuizSubmitDTO dto) {
+        return ResponseEntity.ok(service.submitScoreWithoutUser(dto, categoryId));
+    }
+
     @GetMapping("/{categoryId}")
     public ResponseEntity<?> getCategory(@PathVariable String categoryId) {
         return ResponseEntity.ok(service.getCategory(categoryId));

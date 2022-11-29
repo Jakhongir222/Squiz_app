@@ -47,11 +47,8 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   function handleTheClick (answer, currentQuestion) {
     handleSubmitAnswer(answer);
     if(answer === currentQuestion.wrongAnswers[0]){
-      console.log('correct')
       correctSound();
     }else {
-      console.log('wrong')
-
       wrongSound();
     }
   }
