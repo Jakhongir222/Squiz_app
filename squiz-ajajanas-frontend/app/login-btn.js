@@ -8,7 +8,7 @@ export default function Component({ children }) {
   const hasSentData = useRef(false);
 
   useEffect(() => {
-    if(session && hasSentData) {
+    if(session && !hasSentData.current) {
       hasSentData.current = true;
       const requestData = {'email': session.user.email, 'name': session.user.name}
 

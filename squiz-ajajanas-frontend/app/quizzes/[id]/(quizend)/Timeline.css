@@ -37,7 +37,6 @@
   height: 100%;
   box-sizing: border-box;
   border-radius: 10px;
-  animation: name 10 cubic-bezier() 0 2;
 }
 
 .question-box-content:hover .tooltip{display: block;}
