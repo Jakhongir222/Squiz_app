@@ -36,7 +36,7 @@ function QuizFinish( {props} ) {
   const scoreGraphProps = [questionsAnsweredCorrectly, scoreCategoryData];
 
   return (
-    <div>
+    <div className='quizfinish'>
       <ScoreGraph props={scoreGraphProps}/>
       <Timeline props={props} />
       {/*
