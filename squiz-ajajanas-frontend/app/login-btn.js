@@ -28,16 +28,20 @@ export default function Component({ children }) {
   if (session) {
     return (
       <>
+        <div className='login'>
         Hello, {session.user.name} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        <button className='login-btn' onClick={() => signOut()}>Sign out</button>
         {children}
+        </div>
       </>
     );
   }
   return (
     <>
-      Not signed in.  <br />
-      <button onClick={() => signIn()}>Sign in</button>
+    <div className='login'>
+      You are not signed in.  <br />
+      <button className='login-btn' onClick={() => signIn()}>Sign in</button>
+    </div>
     </>
   );
 }

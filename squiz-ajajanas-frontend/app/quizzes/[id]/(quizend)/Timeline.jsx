@@ -37,7 +37,7 @@ function Timeline({ props }) {
         })}
 
       </div>
-      <div style={{ display: displayInfo ? 'flex' : 'none' }}>
+      <div className='answer-card' style={{ display: displayInfo ? 'flex' : 'none' }}>
         <div>Current question: {questions[infoIndex].question}
           <div>Your Answer: {answers[infoIndex].answer}</div>
           <div>Correct Answer: {questions[infoIndex].wrongAnswers[0].answer}</div>

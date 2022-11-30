@@ -12,20 +12,23 @@ body {
 
 .Logo {
     background-color: var(--primary-light-color);
-    max-width: 60%;
+    max-width: 40%;
     max-height: auto;
     display: flex;
     justify-content: center;
     margin: auto;
+    width: 110vw;
   }
 
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    margin: 5px;
-    padding: 5px;
+    align-items: center;
+    width: 110vw;
+    align-content: center;
+    font-size: large;
     background-color: var(--button-primary-color);
-    
+
 }
 
 .navbar-button {
@@ -41,13 +44,41 @@ body {
     color: var(--primary-dark-color);
 }
 
+.login {
+    background-color: var(--secondary-dark-color);
+    display: grid;
+    padding: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-btn {
+    background-color: var(--button-secondary-color);
+    border: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.login-btn:active {
+    background-color: var(--white-text-color);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    cursor: pointer;
+}
 
 .footer {
     color: var(--white-text-color);
     display: flex;
     justify-content: center;
+    width: 110vw;
 }
-
 
 
 
