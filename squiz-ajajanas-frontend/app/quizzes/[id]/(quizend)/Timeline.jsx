@@ -31,9 +31,11 @@ function Timeline({ props }) {
                   <div>Streak:{streaks[i]}</div>
                   <div>Time:{time[i]}</div>
                 </span>
+                <div className='question-box-tag'>Question{i + 1}</div>
               </div>
-              <div className='question-box-tag'>Q{i + 1}</div>
-            </div>)
+            </div>
+            
+            )
         })}
 
       </div>

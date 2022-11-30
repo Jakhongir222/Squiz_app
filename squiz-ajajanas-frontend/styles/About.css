@@ -3,7 +3,7 @@
 }
 
 .container {
-    background-color: var(--secondary-dark-color);
+    background-color: #495057;
     padding: 20px;
     margin: 15px;
     font-family: 'Roboto', sans-serif;

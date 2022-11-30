@@ -36,7 +36,6 @@ body {
 .navbar-button {
     cursor: pointer;
     background-color: var(--button-primary-color);
-    border-radius: 5px;
     border: 0;
     font-size: large;
     
