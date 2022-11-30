@@ -3,8 +3,8 @@ import Timeline from './Timeline';
 import { useSession } from 'next-auth/react'
 import ScoreGraph from './ScoreGraph';
 
-function QuizFinish( {props} ) {
-  const { data: session } = useSession(); 
+function QuizFinish({ props }) {
+  const { data: session } = useSession();
   const hasSubmitted = useRef(false);
 
   const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData] = props;
@@ -15,14 +15,16 @@ function QuizFinish( {props} ) {
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    if(!hasSubmitted.current){
+    if (!hasSubmitted.current) {
       hasSubmitted.current = true;
+      console.log(questions);
       const requestData = {
-        headers: { 
+        headers: {
           'Accept': 'application/json',
-          'Content-Type': 'application/json'},
+          'Content-Type': 'application/json'
+        },
         method: 'POST',
-        body: JSON.stringify({questions, answers})
+        body: JSON.stringify({ questions, answers })
       }
       const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
       let url = `${baseURL}/${categoryId}/submit`;
@@ -37,7 +39,7 @@ function QuizFinish( {props} ) {
 
   return (
     <div className='quizfinish'>
-      <ScoreGraph props={scoreGraphProps}/>
+      <ScoreGraph props={scoreGraphProps} />
       <Timeline props={props} />
       {/*
       <div>Completed! Your score {scores[scores.length-1]}</div>
@@ -75,7 +77,7 @@ function QuizFinish( {props} ) {
     */}
     </div>
   )
-  
+
 }
 
 export default QuizFinish
