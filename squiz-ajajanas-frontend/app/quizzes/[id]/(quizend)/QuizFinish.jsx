@@ -16,6 +16,7 @@ function QuizFinish( {props} ) {
 
   useEffect(() => {
     if(!hasSubmitted.current){
+      console.log(questions)
       hasSubmitted.current = true;
       const requestData = {
         headers: { 

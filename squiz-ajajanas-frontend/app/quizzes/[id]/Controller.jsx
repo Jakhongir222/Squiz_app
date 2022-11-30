@@ -31,6 +31,7 @@ function Controller({categoryId}) {
   },[categoryId]);
 
   const finishQuiz = (...props) => {
+    console.log(props);
     props = [...props, categoryId, scoreCategoryData];
     setQuizDetailProps({props});
     setQuizIsDone(true);

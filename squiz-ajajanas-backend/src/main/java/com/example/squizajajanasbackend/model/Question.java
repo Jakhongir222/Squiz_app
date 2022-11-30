@@ -46,16 +46,18 @@ public Question(String questionId, String question, List<Answer> answers, List<I
         this.info = info;
     }
 
-    public Question(String questionId, String question, List<Answer> answers, int correctAnswersGiven, int totalAnswersGiven) {
+    public Question(String questionId, String question, List<Answer> answers, List<Info> info, int correctAnswersGiven, int totalAnswersGiven) {
         this.questionId = questionId;
         this.question = question;
         this.answers = answers;
+        this.info = info;
         this.correctAnswersGiven = correctAnswersGiven;
         this.totalAnswersGiven = totalAnswersGiven;
     }
 
     public Question() {
     }
+
 
     public List<Info> getInfo() {
         return info;
