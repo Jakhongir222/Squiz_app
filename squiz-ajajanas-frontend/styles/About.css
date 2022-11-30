@@ -2,6 +2,13 @@
     color: var(--white-text-color);
 }
 
+.container {
+    background-color: var(--secondary-dark-color);
+    padding: 20px;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .intro {
     color: var(--white-text-color);
     
@@ -10,6 +17,14 @@
 .profile-picture {
     max-width: 200px;
     max-height: 200px;
+}
+
+.profile-cart {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5px;
+    padding: 5px;
+    height: 260px;
+    width: 260px;
 }
 
 .profiles {
