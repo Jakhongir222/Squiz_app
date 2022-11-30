@@ -12,7 +12,7 @@ body {
 
 .Logo {
     background-color: var(--primary-light-color);
-    max-width: 40%;
+    max-width: 60%;
     max-height: auto;
     display: flex;
     justify-content: center;
@@ -28,6 +28,8 @@ body {
     align-content: center;
     font-size: large;
     background-color: var(--button-primary-color);
+    margin: 5px;
+    padding: 5px;
 
 }
 
@@ -36,7 +38,7 @@ body {
     background-color: var(--button-primary-color);
     border-radius: 5px;
     border: 0;
-    font-size:medium
+    font-size: large;
     
 }
 
@@ -56,12 +58,10 @@ body {
 .login-btn {
     background-color: var(--button-secondary-color);
     border: none;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;    
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 60px;
+    height: 50px;
     cursor: pointer;
 
 }

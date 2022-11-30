@@ -2,6 +2,7 @@
     background-color: var(--secondary-dark-color);
     height: 60vh;
     margin-top: 20px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +16,13 @@
     color: var(--secondary-dark-color);
     display: flex;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pick-category-button {
     
     background-color: var(--button-secondary-color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     border: 0;
     border-radius: 20px;
     padding: 10px 20px 10px;
