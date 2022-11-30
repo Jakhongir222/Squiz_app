@@ -71,4 +71,9 @@ public class Service {
         updatedCategory.setQuestions(responseQuestions);
         return updatedCategory;
     }
+
+    public List<Score> getScoreByUser(String email) {
+        User user = userRepo.getByEmail(email);
+        return user.getScores();
+    }
 }

@@ -2,11 +2,14 @@ package com.example.squizajajanasbackend.controller;
 import com.example.squizajajanasbackend.dto.UserDTO;
 import com.example.squizajajanasbackend.dto.QuizSubmitDTO;
 import com.example.squizajajanasbackend.model.Info;
+import com.example.squizajajanasbackend.model.Score;
 import com.example.squizajajanasbackend.model.user.User;
 import com.example.squizajajanasbackend.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -46,9 +49,15 @@ public class Controller {
         return ResponseEntity.ok(service.saveUser(userdto));
     }
 
+
     @GetMapping("/user/{email}")
     public ResponseEntity<User> getUserById(@PathVariable String email) {
         return ResponseEntity.ok(service.getUserByEmail(email));
+    }
+
+    @GetMapping("/user/{email}/score")
+    public ResponseEntity<List<Score>> getScoreByUser(@PathVariable String email) {
+        return ResponseEntity.ok(service.getScoreByUser(email));
     }
 
 }

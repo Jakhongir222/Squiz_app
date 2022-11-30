@@ -11,9 +11,9 @@ spring:
       enabled: always
   datasource:
     driver-class-name:
-    url: jdbc:postgresql://ajajanas-server.postgres.database.azure.com:5432/guest
-    username: nantia@ajajanas-server
-    password: Episalt1337
+    url: jdbc:postgresql://mouse.db.elephantsql.com/hmathxbc
+    username: hmathxbc
+    password: 4phX3i3t7X-6bG2eSv81gTnl3RBbqL5p
 
   jpa:
     show-sql: true
