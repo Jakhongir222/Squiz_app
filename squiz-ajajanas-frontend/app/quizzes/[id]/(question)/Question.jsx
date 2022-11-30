@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import "../../../../styles/Quiz.css"
 
 function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
-  const timerlength = 0;
+  const timerlength = 15;
   const [countdown, setCountdown] = useState(timerlength);
   const resetTimer = () => setCountdown(timerlength);
 
@@ -30,7 +30,7 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
 
     const interval = setInterval(() => {
       setCountdown(countdown - 1);
-    }, 1);
+    }, 1000);
     return () => clearInterval(interval);
   }, [countdown])
 
