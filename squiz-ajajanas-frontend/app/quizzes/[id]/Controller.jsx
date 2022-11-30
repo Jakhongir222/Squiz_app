@@ -15,9 +15,10 @@ function Controller({categoryId}) {
   
   //Number of questions per quiz
   const n = 10;
+  const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
 
   useEffect(() => {
-    fetch(`http://localhost:8080/category/${categoryId}`)
+    fetch(`${baseURL}/${categoryId}`)
       .then(data => data.json())
       .then(data => {
         setScoreCategoryData(data.scores);

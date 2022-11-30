@@ -24,8 +24,8 @@ function QuizFinish( {props} ) {
         method: 'POST',
         body: JSON.stringify({questions, answers})
       }
-      
-      let url = `http://localhost:8080/category/${categoryId}/submit`;
+      const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
+      let url = `${baseURL}/${categoryId}/submit`;
       if (session) url = url + `/${session.user.email}`;
       fetch(url, requestData).then(data => data.json())
         .then(data => setRes(data));

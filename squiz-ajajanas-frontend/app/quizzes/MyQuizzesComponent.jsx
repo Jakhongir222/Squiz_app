@@ -7,10 +7,11 @@ import "../../styles/QuizCategories.css"
 function MyQuizzesComponent() {
 
   const [categoryList, setCategoryList] = useState({});
+  const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
 
   useEffect(() => {
     const dict = {}
-    fetch('http://localhost:8080/category')
+    fetch(baseURL)
       .then(data => data.json())
       .then(data => data.forEach(e => {
         dict[e.name] = e.id;

@@ -6,6 +6,7 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 export default function Component({ children }) {
   const { data: session } = useSession(); 
   const hasSentData = useRef(false);
+  const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
 
   useEffect(() => {
     if(session && !hasSentData.current) {
@@ -17,7 +18,7 @@ export default function Component({ children }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData)
     };
-      fetch('http://localhost:8080/category/user', requestOptions)
+      fetch(`${baseURL}/user`, requestOptions)
       .then(response => JSON.stringify(response))
       .then(data => console.log(data));
      }
