@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import Footer from "./footer";
 import "../styles/layout.css"
 import Providers from "./providers";
@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
       <head></head>
       <body>
         <Providers>
-          <Navbar/>
+          <Navbar />
           <main>{children}</main>
-          <Footer/>
+          <Footer />
         </Providers>
       </body>
     </html>

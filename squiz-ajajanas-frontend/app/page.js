@@ -15,6 +15,7 @@ function homepage() {
   }
   
   if(session) {
+    console.log(session)
     return (
       <div className= 'home-page'>
       <LoginBtn /> 

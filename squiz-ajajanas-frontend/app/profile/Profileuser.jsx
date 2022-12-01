@@ -5,12 +5,11 @@ import { useSession } from 'next-auth/react'
 
 function ProfileUser() {
   const { data: session } = useSession(); 
-  console.log(session)
   const [user, setUser] = useState({});
-
+  const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
   useEffect(() => {
     if(session){
-      fetch(`http://localhost:8080/category/user/${session.user.email}`)
+      fetch(`${baseURL}/user/${session.user.email}`)
         .then(e => e.json())
         .then(e => setUser(e))
     }
@@ -21,7 +20,9 @@ function ProfileUser() {
   }
 
   return (
-    <div>{user.name}</div>
+    <div>
+      <div>{user.name}</div>
+    </div>
   )
 }
 

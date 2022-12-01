@@ -42,6 +42,7 @@ public class ScoreConverter {
                     question.getQuestionId(),
                     question.getQuestion(),
                     question.getWrongAnswers(),
+                    question.getInfo(),
                     oldquestion.getCorrectAnswersGiven() + answerIsCorrect,
                     oldquestion.getTotalAnswersGiven() + 1));
 

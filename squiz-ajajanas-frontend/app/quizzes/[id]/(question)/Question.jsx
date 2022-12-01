@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import "../../../../styles/layout.css"
 import { v4 as uuidv4 } from 'uuid';
 import "../../../../styles/Quiz.css"
 
-function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
-  const timerlength = 10;
+function Question({ currentQuestion, goToNextQuestion, streak, score }) {
+  const timerlength = 15;
   const [countdown, setCountdown] = useState(timerlength);
   const resetTimer = () => setCountdown(timerlength);
 
-  const[shuffledAnswers, setShuffledAnswers] = useState([]);
-  
+  const [shuffledAnswers, setShuffledAnswers] = useState([]);
+
   const shuffleAndSelectAnswers = (ansArray) => {
     return ansArray
       .sort(() => Math.random() - 0.5)
-      .slice(0,4);
+      .slice(0, 4);
   }
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   }
 
   useEffect(() => {
-    if(countdown<0) handleSubmitAnswer({'answerId': uuidv4(), 'answer': 'NaA'});
+    if (countdown < 0) handleSubmitAnswer({ 'answerId': uuidv4(), 'answer': 'Not given answer' });
 
     const interval = setInterval(() => {
       setCountdown(countdown - 1);
@@ -39,43 +39,42 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
     audio.play();
   }
 
-  function wrongSound () {
+  function wrongSound() {
     var audio = document.getElementById('a2');
     audio.play();
   }
 
-  function handleTheClick (answer, currentQuestion) {
+  function handleTheClick(answer, currentQuestion) {
     handleSubmitAnswer(answer);
-    if(answer === currentQuestion.wrongAnswers[0]){
-      console.log('correct')
+    if (answer === currentQuestion.wrongAnswers[0]) {
       correctSound();
-    }else {
-      console.log('wrong')
-
+    } else {
       wrongSound();
     }
   }
 
   return (
-    <div>
+    <div className='questionbody'>
       <div className='question'>{currentQuestion.question}</div>
-      <div className='timer'>{countdown}</div>
-      <div className='streak'>Current streak: {streak}</div>
-      <div className='score'>Current score: {score}</div>
+      <div className='quizdata'>
+        <div className='timer'>{countdown}</div>
+        <div className='streak'>Current streak: {streak}</div>
+        <div className='score'>Current score: {score}</div>
+      </div>
       {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
           <>
-          <button className='answer-button' key={index} onClick={()=> handleTheClick(answer, currentQuestion)}>
-            {answer.answer}
-          </button>
-          <audio id='a1'>
+            <button className='answer-button' key={index} onClick={() => handleTheClick(answer, currentQuestion)}>
+              {answer.answer}
+            </button>
+            <audio id='a1'>
               <source src="/correct.wav" type='audio/mpeg' />
-          </audio>
-          <audio id='a2'>
+            </audio>
+            <audio id='a2'>
               <source src="/wrong.mp3" type='audio/mpeg' />
-          </audio>
-            </>
+            </audio>
+          </>
         );
       })}</div>
     </div>

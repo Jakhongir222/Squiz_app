@@ -2,6 +2,20 @@
     color: var(--white-text-color);
 }
 
+.container {
+    background-color: #9f86c0;
+    padding: 20px 20px 20px 20px;
+    margin: 15px 15px 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .intro {
     color: var(--white-text-color);
     
@@ -10,6 +24,14 @@
 .profile-picture {
     max-width: 200px;
     max-height: 200px;
+}
+
+.profile-cart {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5px;
+    padding: 5px;
+    height: 260px;
+    width: 260px;
 }
 
 .profiles {

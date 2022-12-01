@@ -1,0 +1,72 @@
+.bar-graph {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-dark-color);
+  align-items: flex-end;
+  width: 70vw;
+  height: 20vh;
+  gap: 0.5vw;
+  padding: 20px 10px 0px;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.score-col {
+  position: relative;
+  border-bottom: solid;
+  background: var(--button-primary-color);
+  width: 100%;
+}
+
+.score-col:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  translate: 0% -120%;
+  font-size: 20px;
+  background: var(--button-secondary-color);
+  padding: 5px;
+  border: solid;
+}
+
+.quiz-finish {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--button-secondary-color);
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-dark-color);
+
+
+}
+
+.score-finish {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 2px solid var(--button-secondary-color);
+  background-color: var(--secondary-dark-color);
+  box-shadow: 20px;
+  padding: 6px;
+  border-radius: 10px;
+
+}
+
+.score-result {
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.bar-score {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}

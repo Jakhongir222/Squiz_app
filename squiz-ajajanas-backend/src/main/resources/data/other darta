@@ -1,17 +1,3 @@
-[
-  {
-    "category": "Geography",
-    "question": "What is the name of the second tallest mountain in the world?",
-    "answers": [
-      "K2",
-      "Chimyon",
-      "Kabenekase",
-      "Everest"
-    ],
-    "info": [
-      "K2, at 8,611 metres above sea level, is the second-highest mountain on Earth, after Mount Everest."
-    ]
-  }
 ,
   {
     "category": "Geography",
@@ -21,8 +7,7 @@
       "Oak",
       "Pinus",
       "Plum"
-    ],
-    "info" : ["The specific design of the maple leaf that appears in the centre of the National Flag of Canada is known as the stylized 11-point maple leaf."]
+    ]
   },
   {
     "category": "Geography",
@@ -32,8 +17,7 @@
       "Stockholm",
       "Rome",
       "Madrid"
-    ],
-    "info": ["The first organized marathon was held in Athens at the 1896 Olympics, the start of the Games' modern era."]
+    ]
   },
   {
     "category": "Geography",
@@ -43,8 +27,7 @@
       "Ecuador",
       "Santiago",
       "Karakas"
-    ],
-    "info": ["Lima,is located at an elevation of 161 meters in the Central West part of Peru. "]
+    ]
   },
   {
     "category": "Geography",
@@ -54,8 +37,7 @@
       "Mexico",
       "Brasilia",
       "Rio de Janeiro"
-    ],
-    "info": ["The Sagrada Família is Antoni Gaudí's best-known work and has become an undisputed symbol of Barcelona."]
+    ]
   },
   {
     "category": "Geography",
@@ -65,8 +47,7 @@
       "USA",
       "Australia",
       "Sweden"
-    ],
-    "info": ["About 9% of Canada's surface area is covered by lakes. The Great Bear Lake is the largest lake in Canada."]
+    ]
   },
   {
     "category": "Geography",
@@ -76,8 +57,7 @@
       "Adriatic sea",
       "Celebes sea",
       "Dead sea"
-    ],
-    "info": ["the Sargasso Sea is bounded to the west by the Gulf Stream, the North Atlantic Current, the Canary Current and the North Atlantic Equatorial Current."]
+    ]
   },
   {
     "category": "Geography",
@@ -87,8 +67,7 @@
       "Sahara",
       "Kufra",
       "Taklamakan"
-    ],
-    "info": ["The driest place on Earth is a location in Antarctica known as the “Dry Valleys.” It has not rained there for at least two million years."]
+    ]
   },
   {
     "category": "Geography",
@@ -98,8 +77,7 @@
       "Egypt",
       "Algeria",
       "Morocco"
-    ],
-    "info": ["Yup, the country with the most pyramids in the world is Sudan,has between 200 to 255 known pyramids."]
+    ]
   },
   {
     "category": "Geography",
@@ -109,8 +87,7 @@
       "Mount Everest",
       "Mount Pandim",
       "Mount Rushmore"
-    ],
-    "info": ["Mount Chimborazo is the closest place on earth to the moon. This is because of a bulge on the earth where the mountain is located on, makes it the point closest to 'outer space'."]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -120,8 +97,7 @@
       "Pork",
       "McDonalds",
       "Pizza"
-    ],
-    "info": ["Yes, in Gainesville, Georgia, you can get arrested for eating fried chicken with anything but your hands. In 1961, Gainesville passed a law making it illegal to use fork to eat fried chicken as a way to promote Gainesville as a “poultry capital of the world”."]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -131,19 +107,17 @@
       "1940",
       "1967",
       "1988"
-    ],
-    "info": ["The first attested use of this was in a letter from John Fisher, 1st Baron Fisher to Winston Churchill in 1917."]
+    ]
   },
   {
     "category": "Random fun facts",
     "question": "What animal has the largest eyes in the world?",
     "answers": [
-      "Colossal Squid",
+      "Giant Squid",
       "Whale",
       "Shark",
       "Elephant"
-    ],
-    "info": ["Researchers say that colossal squid (Mesonychoteuthis hamiltoni) have the largest eyes ever studied in the animal kingdom. Measuring 27cm in diameter, each eye is roughly the size of a soccer ball! "]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -153,8 +127,7 @@
       "Koala",
       "Turtle",
       "Spider"
-    ],
-    "info": ["Crocodiles can not stick out their tongue or chew"]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -164,8 +137,7 @@
       "Fly",
       "Tarsier",
       "Snake"
-    ],
-    "info": ["An ostrich's eye is bigger than its brain. Compared to other birds, ostriches aren't the smartest, but they have excellent eyesight."]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -175,8 +147,7 @@
       "Z",
       "W",
       "Y"
-    ],
-    "info": ["“Z” may be the last letter in alphabetical order, but the last letter added  was actually “J.”"]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -186,8 +157,7 @@
       "Casa de deliciosa Puerto Rico",
       "Case de grande Mexico",
       "Taco bell in Florida"
-    ],
-    "info": ["The original product was made at the Casa de Fritos (now Rancho Del Zocalo) at Disneyland in Anaheim, California, during the early 1960s."]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -197,8 +167,7 @@
       "Seahorse",
       "Plancton",
       "Sea Monkey"
-    ],
-    "info": ["A shrimp has it's heart on its head. Looking at the anatomy of a shrimp we can see that its heart is located behind the brain."]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -208,8 +177,7 @@
       "Fear of darkness",
       "Fear of deep water",
       "Fear of height"
-    ],
-    "info": ["People with odontophobia, also called dentophobia, have a fear of dentists. "]
+    ]
   },
   {
     "category": "Random fun facts",
@@ -219,8 +187,7 @@
       "Hippopotamus",
       "Giraffe",
       "Snake"
-    ],
-    "info": ["Elephant, in fact, it's impossible. Unlike most mammals, the bones in elephant legs are all pointed downwards, which means they don't have the 'spring' required to push off the ground."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -230,8 +197,7 @@
       "Athena",
       "Hera",
       "Hestia"
-    ],
-    "info": ["Apollo was the god of practically everything – including sun and light (although the god is always associated with the sun, the original sun god was the titan Helios, but everyone forgot about him)."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -241,8 +207,7 @@
       "1941",
       "1918",
       "1955"
-    ],
-    "info": ["Four months after the San Francisco Conference ended, the United Nations officially began, on 24 October 1945."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -252,8 +217,7 @@
       "Eminem",
       "Beyonce",
       "Rihanna"
-    ],
-    "info": [" Drake is the most-streamed male artist of all time, "]
+    ]
   },
   {
     "category": "General knowledge",
@@ -263,8 +227,7 @@
       "Flock",
       "Herd",
       "Group"
-    ],
-    "info": ["A group of crows is called a “murder.” There are several different explanations for the origin of this term, mostly based on old folk tales and superstitions."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -274,8 +237,7 @@
       "109",
       "106",
       "111"
-    ],
-    "info": ["with 118 known elements, periodic table is widely regarded as one of the most significant achievements in science."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -285,8 +247,7 @@
       "Sweden",
       "Norway",
       "Denmark"
-    ],
-    "info": ["Finland is the world's biggest consumer of coffee on a per-person basis. The average Finn drinks nearly four cups a day."]
+    ]
   },
   {
     "category": "General knowledge",
@@ -296,8 +257,7 @@
       "Mars",
       "Saturn",
       "Mercury"
-    ],
-    "info": ["Even though Mercury is closer to the Sun, Venus is the hottest planet with an average temperature of 464 degree Celsius!"]
+    ]
   },
   {
     "category": "General knowledge",
@@ -307,19 +267,17 @@
       "2",
       "1",
       "None"
-    ],
-    "info": ["3 bones are present in the ear ossicles namely, stapes, incus and malleus. The ossicles are also known as auditory ossicles."]
+    ]
   },
   {
     "category": "General knowledge",
     "question": "What country has won the most World Cups?",
     "answers": [
-      "Brazil",
+      "Brasil",
       "Argentina",
       "Germany",
       "Italy"
-    ],
-    "info": ["Brazil are the most successful nation in World Cup history and have won the famous trophy five times!!"]
+    ]
   },
   {
     "category": "General knowledge",
@@ -329,8 +287,7 @@
       "2",
       "1",
       "4"
-    ],
-    "info": ["An octopus's three hearts have slightly different roles. One heart circulates blood around the body, while the other two pump it past the gills, to pick up oxygen."]
+    ]
   },
   {
     "category": "History",
@@ -340,8 +297,7 @@
       "1916",
       "1918",
       "1915"
-    ],
-    "info": ["World War I began in 1914, after the assassination of Archduke Franz Ferdinand, and lasted until 1918"]
+    ]
   },
   {
     "category": "History",
@@ -351,8 +307,7 @@
       "Spain",
       "France",
       "Slovakia"
-    ],
-    "info": ["Invasion of Poland, on 1 September 1939!"]
+    ]
   },
   {
     "category": "History",
@@ -361,9 +316,8 @@
       "Sirimavo Bandaranaike",
       "Indira Gandhi",
       "Golda Meir",
-      "Margaret Thatcher"
-    ],
-    "info": ["Sirimavo Bandaranaike was elected as the world's first female Prime Minister on 21 July 1960!"]
+      "Margeret Thatcher"
+    ]
   },
   {
     "category": "History",
@@ -373,8 +327,7 @@
       "1990",
       "1912",
       "1945"
-    ],
-    "info": ["The Russian Revolution of 1917"]
+    ]
   },
   {
     "category": "History",
@@ -384,8 +337,7 @@
       "John Travolta",
       "Jonatan Ieloish",
       "John Smith"
-    ],
-    "info": ["On April 14, 1865, Abraham Lincoln, the 16th president of the United States, was assassinated by well-known stage actor John Wilkes Booth!"]
+    ]
   },
   {
     "category": "History",
@@ -395,8 +347,7 @@
       "1913",
       "1914",
       "1915"
-    ],
-    "info": ["May 31, 1911, 1,500 people died"]
+    ]
   },
   {
     "category": "History",
@@ -406,8 +357,7 @@
       "1451",
       "1506",
       "1509"
-    ],
-    "info": ["1492, after five years later, some 25 to 50 million people were dead"]
+    ]
   },
   {
     "category": "History",
@@ -417,8 +367,7 @@
       "1375",
       "1306",
       "1379"
-    ],
-    "info": ["1347, Five years later, some 25 to 50 million people were dead"]
+    ]
   },
   {
     "category": "History",
@@ -428,8 +377,7 @@
       "1864",
       "1875",
       "1855"
-    ],
-    "info": ["November 24, 1859, it sold out in a matter of days."]
+    ]
   },
   {
     "category": "History",
@@ -439,8 +387,7 @@
       "1941",
       "1875",
       "1943"
-    ],
-    "info": ["1945, an American B-29 bomber dropped the world's first deployed atomic bomb over the Japanese city of Hiroshima"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -450,8 +397,7 @@
       "Odd number",
       "Not a number",
       "Neither odd nor even"
-    ],
-    "info": ["0 is a relatively new number, invented in india and brought to the west through the arabic number system"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -461,7 +407,7 @@
       "3.41",
       "3.12",
       "3.16"
-    ],"info": ["The symbol for pi comes from the greek alphabet, like many other mathematical symbols"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -471,7 +417,7 @@
       "13",
       "17",
       "15"
-    ],"info": ["The square root was invented in china, 200bc"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -481,7 +427,7 @@
       "Numerator",
       "Decimal",
       "Declarative"
-    ],"info": ["Not to be confused with the numerator"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -491,7 +437,7 @@
       "5",
       "7",
       "8"
-    ],"info": ["Rule of thumb: Add 3 for every change of word"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -501,7 +447,7 @@
       "XI",
       "M",
       "LL"
-    ],"info": ["Roman numerals don't contain zero"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -511,7 +457,7 @@
       "Right angle",
       "Straight angle",
       "Reflex angle"
-    ],"info": ["Larger than 90% is called obtuse"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -521,7 +467,7 @@
       "8",
       "14",
       "16"
-    ],"info": ["Comes from the latin dode meaning twelve"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -531,7 +477,7 @@
       "Numeral",
       "Denominator",
       "Decimal"
-    ],"info": ["Not to be confused with the denominator"]
+    ]
   },
   {
     "category": "Mathematics",
@@ -541,7 +487,7 @@
       "Circumstance",
       "Circular",
       "Size"
-    ],"info": ["Whilst circles are circular, they are not circumferencular"]
+    ]
   },
   {
     "category": "Programming",
@@ -551,8 +497,7 @@
       "Float",
       "String",
       "Integer"
-    ],
-    "info": ["It is boolean, It only takes , true or false"]
+    ]
   },
   {
     "category": "Programming",
@@ -562,8 +507,7 @@
       "True",
       "There is no container in Java",
       "There is no class in Java"
-    ],
-    "info": ["In java we use methods but It doesn't contain the classes"]
+    ]
   },
   {
     "category": "Programming",
@@ -573,8 +517,7 @@
       "HyperText Make Language",
       "HyperText Mark Language",
       "Hyper Text Markup Leveler"
-    ],
-    "info": ["Hyper Text Markup Language, it was invented 1993"]
+    ]
   },
   {
     "category": "Programming",
@@ -584,8 +527,7 @@
       "1024",
       "100000",
       "10000"
-    ],
-    "info": ["1000000 and one byte is equeal 8 bits"]
+    ]
   },
   {
     "category": "Programming",
@@ -595,8 +537,7 @@
       "Promise",
       "Callback",
       "Repetition"
-    ],
-    "info": ["Recursion, it occurs when a thing is defined in terms of itself or of its type"]
+    ]
   },
   {
     "category": "Programming",
@@ -606,8 +547,7 @@
       "Data elements",
       "List structure",
       "Collection"
-    ],
-    "info": ["Linked list, In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list"]
+    ]
   },
   {
     "category": "Programming",
@@ -617,8 +557,7 @@
       "Last In Fast Out",
       "Latest In Fastest Out",
       "Less In Faster Out"
-    ],
-    "info": ["Last In First Out, it is a method used to account for inventory that records the most recently produced items as sold first."]
+    ]
   },
   {
     "category": "Programming",
@@ -628,8 +567,7 @@
       "Categorizing Style Sheets",
       "Categorizing System Sheets",
       "Cascading System Sheets"
-    ],
-    "info": ["Cascading Style Sheets, 1994- the idea of CSS was proposed"]
+    ]
   },
   {
     "category": "Programming",
@@ -639,8 +577,7 @@
       "Syntax error",
       "Logic error",
       "Technical error"
-    ],
-    "info": ["It is runtime error it occurs while a program is running or when you first attempt to start the application."]
+    ]
   },
   {
     "category": "Programming",
@@ -650,8 +587,7 @@
       "3",
       "5",
       "6"
-    ],
-    "info": ["They are 4; Stacks, Queues, Arrays, and Linked lists"]
+    ]
   },
   {
     "category": "Logic",
@@ -661,8 +597,7 @@
       "13",
       "11",
       "17"
-    ],
-    "info": ["The sum of all numbers from 1 to 100 is 5500"]
+    ]
   },
   {
     "category": "Logic",
@@ -672,8 +607,7 @@
       "3",
       "12",
       "18"
-    ],
-    "info": ["The typewriter was invented in 1868"]
+    ]
   },
   {
     "category": "Logic",
@@ -683,8 +617,7 @@
       "50",
       "40,5",
       "None of above"
-    ],
-    "info": ["Written out it's hard to solve, but in symbols its easy (30/0.5 + 10)"]
+    ]
   },
   {
     "category": "Logic",
@@ -694,8 +627,7 @@
       "9",
       "25",
       "35"
-    ],
-    "info": ["Farming was invented almost 10000 years ago"]
+    ]
   },
   {
     "category": "Logic",
@@ -705,8 +637,7 @@
       "43",
       "3",
       "I don’t like apples"
-    ],
-    "info": ["Despite popular belief, apples come from central asia"]
+    ]
   },
   {
     "category": "Logic",
@@ -716,8 +647,7 @@
       "2",
       "3",
       "None of above"
-    ],
-    "info": ["The true first racing with racecars was in 1895"]
+    ]
   },
   {
     "category": "Logic",
@@ -727,8 +657,7 @@
       "February",
       "January",
       "May"
-    ],
-    "info": ["Not counting leap years, of course"]
+    ]
   },
   {
     "category": "Logic",
@@ -738,8 +667,7 @@
       "Maternal uncle",
       "Nephew",
       "Cousins"
-    ],
-    "info": ["Niece stems from iece like nuncle to uncle, niceunkle!"]
+    ]
   },
   {
     "category": "Logic",
@@ -749,8 +677,7 @@
       "Nono",
       "Nantia",
       "Nina"
-    ],
-    "info": ["Mary stems from the new testament, 'mariam'"]
+    ]
   },
   {
     "category": "Logic",
@@ -760,8 +687,7 @@
       "32 and 8",
       "28 and 7",
       "60 and 15"
-    ],
-    "info": ["The first philisopher is believed to be damocles, who believed all things stem from water"]
+    ]
   },
   {
     "category": "Animals",
@@ -771,8 +697,7 @@
       "Tiger",
       "Lion",
       "Crocodile"
-    ],
-    "info": ["The hippothalamus is the part of our brain responsible for reasoning"]
+    ]
   },
   {
     "category": "Animals",
@@ -782,8 +707,7 @@
       "12 month",
       "9 month",
       "18 month"
-    ],
-    "info": ["Elephants can pain"]
+    ]
   },
   {
     "category": "Animals",
@@ -793,8 +717,7 @@
       "Sloth",
       "Cat",
       "Bear"
-    ],
-    "info": ["Sloths can actually be quite dangerous when threathened"]
+    ]
   },
   {
     "category": "Animals",
@@ -804,8 +727,7 @@
       "Green",
       "Black",
       "Red"
-    ],
-    "info": ["Giraffes have spiky tongues. It's true!"]
+    ]
   },
   {
     "category": "Animals",
@@ -815,8 +737,7 @@
       "Goatee",
       "Goatlet",
       "Baby goat"
-    ],
-    "info": ["Goats were one of the first animals to be tamed by humans and were being herded 9,000 years ago"]
+    ]
   },
   {
     "category": "Animals",
@@ -826,8 +747,7 @@
       "Elephant",
       "Rhino",
       "Ostrich"
-    ],
-    "info": ["Ostrich eggs are very large, although smaller than a rhino"]
+    ]
   },
   {
     "category": "Animals",
@@ -837,8 +757,7 @@
       "Snake",
       "Crocodile",
       "Turtle"
-    ],
-    "info": ["It is said that the entire world resides on a turtles back"]
+    ]
   },
   {
     "category": "Animals",
@@ -848,8 +767,7 @@
       "On their stomach",
       "On their back",
       "On their elbows"
-    ],
-    "info": ["It is common knowledge that its impossible to lick your elbows, but you can't lick your back either (trust me)"]
+    ]
   },
   {
     "category": "Animals",
@@ -859,8 +777,7 @@
       "10",
       "8",
       "6"
-    ],
-    "info": ["Caterpillars be caterpillaring"]
+    ]
   },
   {
     "category": "Animals",
@@ -870,6 +787,6 @@
       "140 times",
       "120 times",
       "80 times"
-    ],
-    "info": ["Despite common belief, bees are not the only pollinators and foods like Maize are not dependant on them"]
-  }]
+    ]
+  }
+]

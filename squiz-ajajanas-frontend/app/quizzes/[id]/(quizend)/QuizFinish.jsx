@@ -1,32 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Timeline from './Timeline';
 import { useSession } from 'next-auth/react'
+import ScoreGraph from './ScoreGraph';
 
+function QuizFinish({ props }) {
+  const { data: session } = useSession();
+  const hasSubmitted = useRef(false);
 
-function QuizFinish( {props} ) {
-  const { data: session } = useSession(); 
+  const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData, playerScore] = props;
 
-  const [scores, questions, answers, time, streaks, categoryId] = props;
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
 
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/category/${categoryId}/submit/${session.user.email}`, {
-      headers: { 
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'POST',
-      body: JSON.stringify({questions, answers})
-    }).then(data => data.json())
-    .then(data => setRes(data));
+    if (!hasSubmitted.current) {
+      hasSubmitted.current = true;
+      console.log(questions);
+      const requestData = {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        body: JSON.stringify({ questions, answers })
+      }
+      const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
+      let url = `${baseURL}/${categoryId}/submit`;
+      if (session) url = url + `/${session.user.email}`;
+      fetch(url, requestData).then(data => data.json())
+        .then(data => setRes(data));
+    }
   }, [])
 
+  const questionsAnsweredCorrectly = [...streaks].map(s => s && 1).reduce((partial, a) => partial + a, 0);
+  const scoreGraphProps = [questionsAnsweredCorrectly, scoreCategoryData];
+
   return (
-    <div>
+    <div className='quizfinish'>
+      <div className='quiz-finish'>The quiz is Over!</div>
       <Timeline props={props} />
+      <div style={{ height: '20vh' }} />
+      <ScoreGraph props={scoreGraphProps} />
+      <a href="/quizzes"> Another test? </a>
+      {/*
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>
       <ul>{questions.map((q, index) => {
@@ -59,9 +77,10 @@ function QuizFinish( {props} ) {
           </li>)
       })}</ul>
     <a href="/quizzes"> Another test? </a>
+    */}
     </div>
   )
-  
+
 }
 
 export default QuizFinish

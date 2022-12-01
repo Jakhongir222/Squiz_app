@@ -11,9 +11,10 @@ spring:
       enabled: always
   datasource:
     driver-class-name:
-    url: jdbc:postgresql://mouse.db.elephantsql.com/ocvhqdap
-    username: ocvhqdap
-    password: 6jnwhxgxiPBWGg2DMXtc96laX1O2aDwY
+    url: jdbc:postgresql://ajajanas-server.postgres.database.azure.com:5432/guest
+    username: nantia@ajajanas-server
+    password: Episalt1337
+
   jpa:
     show-sql: true
     generate-ddl: true

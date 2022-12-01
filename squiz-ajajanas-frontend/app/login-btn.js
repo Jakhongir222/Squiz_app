@@ -6,9 +6,10 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 export default function Component({ children }) {
   const { data: session } = useSession(); 
   const hasSentData = useRef(false);
+  const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
 
   useEffect(() => {
-    if(session && hasSentData) {
+    if(session && !hasSentData.current) {
       hasSentData.current = true;
       const requestData = {'email': session.user.email, 'name': session.user.name}
 
@@ -17,37 +18,30 @@ export default function Component({ children }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData)
     };
-      fetch('http://localhost:8080/category/user', requestOptions)
+      fetch(`${baseURL}/user`, requestOptions)
       .then(response => JSON.stringify(response))
       .then(data => console.log(data));
      }
   }, [session]);
 
-  // // const createUser = (session) => {
-  //   const requestOptions = {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify(session) 
-  //   };
-    
-  //   fetch('http://localhost:8080/', requestOptions)
-  //   .then(response => response.json())
-  //   .then(data => setThoughts([data, ...session]))
-  // }
 
   if (session) {
     return (
       <>
+        <div className='login'>
         Hello, {session.user.name} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        <button className='login-btn' onClick={() => signOut()}>Sign out</button>
         {children}
+        </div>
       </>
     );
   }
   return (
     <>
-      Not signed in.  <br />
-      <button onClick={() => signIn()}>Sign in</button>
+    <div className='login'>
+      You are not signed in.  <br />
+      <button className='login-btn' onClick={() => signIn()}>Sign in</button>
+    </div>
     </>
   );
 }

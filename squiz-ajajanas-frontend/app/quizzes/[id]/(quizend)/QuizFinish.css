@@ -1,0 +1,13 @@
+.quizfinish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-another-test {
+  justify-content: center;
+  margin: 30px;
+  align-items: center;
+}
