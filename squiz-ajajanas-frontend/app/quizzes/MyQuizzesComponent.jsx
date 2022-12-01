@@ -32,10 +32,10 @@ function MyQuizzesComponent() {
     <div className='categories'>
       {Object.keys(categoryList).map((category, index) => {
         return (
-          <a className='category-name' key={index} href={`quizzes/${categoryList[category]}`}>
-            <img src={images[category]} width="200" height={200}/>
-            <div key={index}>
-             {category}
+          <a className='category' key={index} href={`quizzes/${categoryList[category]}`}>
+            <img className='category-image' src={images[category]} width='250' height='250'/>
+            <div className='category-name' key={index}>
+             {category === 'Random fun facts' ? 'Fun facts' : category === 'General knowledge' ? 'General' : category}
            </div>
           </a>
         )

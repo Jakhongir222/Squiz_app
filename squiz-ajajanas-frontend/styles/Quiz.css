@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: top;
     padding: 150px;
-    padding-top: 70px;
+    padding-top: 100px;
     margin: 30px;
     color: var(--background-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -48,7 +48,7 @@
 .question {
     border: solid 1px var(--secondary-dark-color);
     padding: 20px;
-    width: 800px;
+    width: 750px;
     margin-bottom: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -77,14 +77,22 @@
 .streak {
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    margin: 10px;
     align-items: center;
     align-content: center;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .score {
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    margin: 10px;
     align-items: center;
     align-content: center;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

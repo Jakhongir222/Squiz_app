@@ -10,7 +10,7 @@ function navbar() {
     if(session) {
       return (
         <div>
-        <Image className='Logo' src="/logo.png" width="300" height="300" alt="Logo"/>
+        <Image className='Logo' src="/logo.png" width="150" height="50" alt="Logo"/>
          <div className='navbar'>
            <a href='/'><button className='navbar-button'>Home</button></a>
            <a href='/about'><button className='navbar-button'>About</button></a>

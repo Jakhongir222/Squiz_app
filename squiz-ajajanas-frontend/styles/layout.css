@@ -1,7 +1,7 @@
 :root {
     --background-color: #190933;
     --primary-dark-color: #665687;
-    --secondary-dark-color: #B084CC;
+    --secondary-dark-color: #9f86c0;
     --button-primary-color: #ACFCD9;
     --button-secondary-color: #5DD9C1;
     --white-text-color: aliceblue;
@@ -19,8 +19,8 @@ body {
 
 .Logo {
     background-color: var(--primary-light-color);
-    max-width: 60%;
-    max-height: auto;
+    max-width: 330px;
+    max-height: 110px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -35,10 +35,10 @@ body {
     align-items: center;
     width: 105vw;
     align-content: center;
-    font-size: large;
+    font-size: medium;
     background-color: var(--button-primary-color);
-    margin: 5px;
-    padding: 5px;
+    margin: auto;
+
 
 }
 
@@ -47,7 +47,6 @@ body {
     background-color: var(--button-primary-color);
     border: 0;
     font-size: large;
-
 }
 
 .navbar-button:hover {
@@ -66,6 +65,8 @@ body {
 .login-btn {
     background-color: var(--button-secondary-color);
     border: none;
+    margin-left: 60px;
+    margin-right: 60px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
