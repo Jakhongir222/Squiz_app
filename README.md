@@ -8,10 +8,24 @@ We build  a quiz app to keep people entertained and att the same time educate th
 
 # Technology
 The project is a Full-Stack application. Technologies used include;
+
+* Java 17 
+* REST-ful API 
 * Spring boot
-* Next JS
 * PostgresSQL
-* next-auth@4.17.0
+* Java Script
+* React 
+* Next.js v. 13
+* next-auth@4.17.0 with google provider
+* Unsplash API
+* css
+* Microsoft Azzure
+
+# Tools
+
+* IntelliJ 
+* VSCode
+* Figma
 
 # Coming!
 This is how the final project was by end of December 2nd, 2022. Check the individual repos for future changes that each dev might have done to the project.
