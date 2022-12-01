@@ -19,7 +19,11 @@ function ScoreGraph({ props }) {
 
   return (
     <div>
-      <div>You did better than {rounded}% of players</div>
+      <div className='score-finish'>Your score : </div>
+      <div className='score-result'>
+        {playerScore} /10
+      </div>
+      <div className='bar-score'>You did better than {rounded}% of players</div>
       <div className='bar-graph'>{
         arr.current.map((score, i) => {
           let color = (i === playerScore) ? '#f5' : '#58f';

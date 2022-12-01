@@ -1,4 +1,4 @@
-.bar-graph{
+.bar-graph {
   display: flex;
   flex-direction: row;
   background-color: darkgray;
@@ -9,10 +9,10 @@
   padding: 20px 10px 0px;
 }
 
-.score-col{
+.score-col {
   position: relative;
   border-bottom: solid;
-  background:yellowgreen;
+  background: yellowgreen;
   width: 100%;
 }
 
@@ -24,4 +24,37 @@
   background: gray;
   padding: 5px;
   border: solid;
+}
+
+.quiz-finish {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--button-secondary-color);
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-dark-color);
+
+}
+
+.score-finish {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.score-result {
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 10px;
+  background-color: var(--secondary-dark-color);
+  padding: 6px;
+
+
+}
+
+.bar-score {
+  display: flex;
+  margin: 10px;
 }

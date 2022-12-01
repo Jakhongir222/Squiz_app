@@ -1,7 +1,14 @@
-.quizfinish{
+.quizfinish {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.link {
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+  display: flex;
 }

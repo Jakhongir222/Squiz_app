@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Timeline.css';
 
+
 function Timeline({ props }) {
   const [displayInfo, setDisplayedInfo] = useState(false);
   const [infoIndex, setInfoIndex] = useState(0);
@@ -20,6 +21,16 @@ function Timeline({ props }) {
 
   return (
     <div className='timeline-extended'>
+      <div className='popup_display' style={{ display: displayInfo ? 'flex' : 'none' }}>
+        <div className='current-question'>Current question: {questions[infoIndex].question}
+          <div className='players-answer'>Your Answer: {answers[infoIndex].answer}</div>
+          <div className='correct-answer'>Correct Answer: {questions[infoIndex].wrongAnswers[0].answer}</div>
+          <div className='info'>Info : {questions[infoIndex].info[0].info}</div>
+        </div>
+        <div>
+        </div>
+
+      </div>
       <div className='timeline'>
         {questions.map((q, i) => {
           boxColor = (q.wrongAnswers[0].answer === answers[i].answer) ? '#7cb518' : '#ef233c'
@@ -28,24 +39,12 @@ function Timeline({ props }) {
               <div className='question-box-content' style={{ background: boxColor }}>
                 <span className='tooltip'>
                   <div>Score:{scores[i]}</div>
-                  <div>Streak:{streaks[i]}</div>
                   <div>Time:{time[i]}</div>
                 </span>
               </div>
               <div className='question-box-tag'>Q{i + 1}</div>
             </div>)
         })}
-
-      </div>
-      <div style={{ display: displayInfo ? 'flex' : 'none' }}>
-        <div>Current question: {questions[infoIndex].question}
-          <div>Your Answer: {answers[infoIndex].answer}</div>
-          <div>Correct Answer: {questions[infoIndex].wrongAnswers[0].answer}</div>
-          <div>Info : {questions[infoIndex].info[0].info}</div>
-        </div>
-        <div>
-        </div>
-
       </div>
     </div>
   )

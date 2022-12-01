@@ -7,7 +7,7 @@ function QuizFinish({ props }) {
   const { data: session } = useSession();
   const hasSubmitted = useRef(false);
 
-  const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData] = props;
+  const [scores, questions, answers, time, streaks, categoryId, scoreCategoryData, playerScore] = props;
 
   let color = '#fff';
   const highestStreak = Math.max(...streaks);
@@ -39,8 +39,11 @@ function QuizFinish({ props }) {
 
   return (
     <div className='quizfinish'>
-      <ScoreGraph props={scoreGraphProps} />
+      <div className='quiz-finish'>The quiz is Over!</div>
       <Timeline props={props} />
+      <ScoreGraph props={scoreGraphProps} />
+      <a className='link' href="/quizzes"> Another test? </a>
+
       {/*
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>

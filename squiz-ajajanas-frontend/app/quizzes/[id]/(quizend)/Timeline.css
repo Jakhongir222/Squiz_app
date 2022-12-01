@@ -9,9 +9,11 @@
   border: solid 2px black;
   display: flex;
   flex-direction: row;
-  background-color: darkgray;
-  height: 20vh;
+  background-color: var(--primary-dark-color);
+  height: 10vh;
   gap: 0.5vw;
+  margin-top: 50px;
+
 }
 
 .question-box {
@@ -23,6 +25,7 @@
   height: 100%;
   box-sizing: border-box;
 }
+
 .tooltip {
   display: none;
   position: absolute;
@@ -42,15 +45,41 @@
   box-sizing: border-box;
 }
 
-.question-box-content:hover .tooltip{display: block;}
+.question-box-content:hover .tooltip {
+  display: block;
+}
 
 .question-box-tag {
   font-size: 20px;
   text-overflow: clip;
   justify-content: center;
   align-self: center;
-  height: 50%;
-  width: 100%;
-  box-sizing: border-box;
+  /* height: 50%;
+  width: 100%; */
+  /* box-sizing: border-box; */
 }
 
+.popup_display {
+  border: 10px solid var(--primary-dark-color);
+  box-shadow: 10px 10px var(--secondary-dark-color);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.current-question {
+  margin: 5px;
+
+}
+
+.players-answer {
+  margin: 5px;
+}
+
+.correct-answer {
+  margin: 10px;
+}
+
+.info {
+  margin: 10px;
+}
