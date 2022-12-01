@@ -1,9 +1,8 @@
 import React from 'react'
-import ProfileUser from './profileuser'
 
 function page() {
   return (
-    <ProfileUser/>
+    <div>Hello user, you are now logged in!</div>
   )
 }
 
