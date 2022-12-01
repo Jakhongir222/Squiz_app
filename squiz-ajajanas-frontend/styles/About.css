@@ -3,10 +3,17 @@
 }
 
 .container {
-    background-color: #495057;
-    padding: 20px;
-    margin: 15px;
+    background-color: #9f86c0;
+    padding: 20px 20px 20px 20px;
+    margin: 15px 15px 15px 15px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .intro {
