@@ -17,36 +17,35 @@ body {
     overflow-x: hidden;
 }
 
-.Logo {
-    background-color: var(--primary-light-color);
-    max-width: 330px;
-    max-height: 110px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 110vw;
-}
-
 .navbar {
     display: flex;
+    justify-content: center;
     position: relative;
     translate: -5vw;
     justify-content: space-evenly;
-    align-items: center;
     width: 105vw;
-    align-content: center;
     font-size: medium;
     background-color: var(--button-primary-color);
-    margin: auto;
+}
 
-
+.signedinas {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-button {
     cursor: pointer;
     background-color: var(--button-primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 0;
     font-size: large;
+    background: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px;
+    padding: 10px;
 }
 
 .navbar-button:hover {
@@ -84,7 +83,17 @@ body {
 
 .footer {
     color: var(--white-text-color);
+    position: absolute;
     display: flex;
+    margin-top: 30px;
     justify-content: center;
     width: 110vw;
+    align-items: center;
+}
+
+.logo {
+    background-color: var(--primary-light-color);
+    display: flex;
+    justify-content: center;
+
 }

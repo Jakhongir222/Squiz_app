@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.score-col:hover .tooltip {
+  display: block;
+}
+
 .tooltip {
   display: none;
   position: absolute;

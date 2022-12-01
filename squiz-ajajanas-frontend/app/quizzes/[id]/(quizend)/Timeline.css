@@ -4,6 +4,7 @@
   flex-direction: column-reverse;
   height: 10%;
   box-sizing: border-box;
+  align-items: top;
 }
 
 .timeline {
@@ -64,32 +65,32 @@
 
 .popup_display {
   position: absolute;
-  translate: 0 30vh;
+  translate: 0 35vh;
   background: var(--primary-dark-color);
+  flex-direction: column;
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
   font-size: 30px;
   justify-content: left;
+  align-self: top;
   border: solid 1px var(--secondary-dark-color);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   box-sizing: border-box;
 }
 
-.current-question {
-  margin: 5px;
-
+.popup-content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
 }
 
-.players-answer {
-  margin: 5px;
+.popup-info {
+  margin-left: 10px;
 }
 
-.correct-answer {
-  margin: 10px;
-}
-
-.info {
-  margin: 10px;
+.popup-text {
+  color: var(--secondary-dark-color);
+  display: grid;
 }

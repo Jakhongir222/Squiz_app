@@ -7,15 +7,18 @@ function ScoreGraph({ props }) {
 
   const numberOfQuestions = 10;
   const arr = useRef(new Array(numberOfQuestions + 1).fill(0))
+  useEffect(() => {
+    scoreCategoryData.map((e, i) => {
+      arr.current[scoreCategoryData[i].score] += 1;
+    })
+  }, [])
 
-  scoreCategoryData.map((e, i) => {
-    arr.current[scoreCategoryData[i].score] += 1;
-  })
   const maxScore = Math.max(...arr.current);
 
   const smallScores = scoreCategoryData.filter(s => s.score < playerScore);
   const percent = (smallScores.length / scoreCategoryData.length) * 100;
   const rounded = Math.round(percent);
+  console.log(arr.current)
 
   return (
     <div>
@@ -29,7 +32,7 @@ function ScoreGraph({ props }) {
           return (
             <div className="score-col" key={i} style={{ height: `${h}%`, background: color }}>
               <span className='tooltip'>
-                <div>Score</div>
+                <div>{arr.current[i] / 2} players also got {i} points</div>
               </span>
             </div>)
         })}

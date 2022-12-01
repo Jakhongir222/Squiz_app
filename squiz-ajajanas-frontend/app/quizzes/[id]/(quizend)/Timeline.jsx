@@ -46,12 +46,24 @@ function Timeline({ props }) {
 
       </div>
       <div className='popup_display' style={{ display: displayInfo ? 'flex' : 'none' }}>
-        <div className='current-question'>Current question: {questions[infoIndex].question}
-          <div className='players-answer'>Your Answer: {answers[infoIndex].answer}</div>
-          <div className='correct-answer'>Correct Answer: {questions[infoIndex].wrongAnswers[0].answer}</div>
-          <div className='info'>Info : {questions[infoIndex].info[0].info}</div>
-          <div className='difficulty'>Only {arr[infoIndex]}% of players got this question right!</div>
+        <div className='popup-content'>
+          <div className='popup-text'>Current question:</div>
+          <div className='popup-info'> {questions[infoIndex].question} </div>
+          {/* </div> */}
+          {/* <div className='popup-content'> */}
+          <div className='popup-text'>Your Answer: </div>
+          <div className='popup-info'>{answers[infoIndex].answer}</div>
+          {/* </div> */}
+          {/* <div className='popup-content' > */}
+          <div className='popup-text'>Correct Answer: </div>
+          <div className='popup-info'>{questions[infoIndex].wrongAnswers[0].answer}</div>
+          {/* </div> */}
+          {/* <div className='popup-content'> */}
+          <div className='popup-text'>Info: </div>
+          <div className='popup-info'> {questions[infoIndex].info[0].info}</div>
         </div>
+        <div className='popup-text'>Only {arr[infoIndex]}% of players got this question right!</div>
+
       </div>
       {/* <div className='answer-card' style={{ display: displayInfo ? 'flex' : 'none' }}>
         <div>Current question: {questions[infoIndex].question}
