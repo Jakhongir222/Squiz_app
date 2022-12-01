@@ -41,10 +41,23 @@ function Timeline({ props }) {
                   <div>Score:{scores[i]}</div>
                   <div>Time:{time[i]}</div>
                 </span>
+                <div className='question-box-tag'>Question{i + 1}</div>
               </div>
-              <div className='question-box-tag'>Q{i + 1}</div>
-            </div>)
+            </div>
+
+          )
         })}
+
+      </div>
+      <div className='answer-card' style={{ display: displayInfo ? 'flex' : 'none' }}>
+        <div>Current question: {questions[infoIndex].question}
+          <div>Your Answer: {answers[infoIndex].answer}</div>
+          <div>Correct Answer: {questions[infoIndex].wrongAnswers[0].answer}</div>
+          <div>Info : {questions[infoIndex].info[0].info}</div>
+        </div>
+        <div>
+        </div>
+
       </div>
     </div>
   )

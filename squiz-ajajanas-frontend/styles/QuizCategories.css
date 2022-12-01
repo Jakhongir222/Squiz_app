@@ -2,7 +2,7 @@
 .categories {
     background-color: var(--secondary-dark-color);
     padding: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,11 +14,14 @@
 
 a:link {
     text-decoration: none;
+
 }
 
 .category-name {
-    color: #5DD9C1;
+    color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 20px;
+    
 }

@@ -6,7 +6,6 @@ import Histogram from './Histogram';
 
 function ProfileUser() {
   const { data: session } = useSession(); 
-  console.log(session)
   const [user, setUser] = useState({});
   const baseURL = 'https://finalprojectbackendapp.azurewebsites.net/category';
   useEffect(() => {
