@@ -30,7 +30,7 @@ function Question({ currentQuestion, goToNextQuestion, streak, score }) {
 
     const interval = setInterval(() => {
       setCountdown(countdown - 1);
-    }, 1);
+    }, 1000);
     return () => clearInterval(interval);
   }, [countdown])
 
