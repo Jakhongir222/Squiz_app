@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     padding: 150px;
+    padding-top: 50px;
     margin: 30px;
     color: var(--background-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     list-style-type: none;
+    height: 600px;
 
 }
 
@@ -20,7 +22,6 @@
     min-height: 100%;
     width: 100%;
     flex-direction: column;
-    padding: 30px;
 }
 
 .answer-button {
@@ -43,3 +44,54 @@
 .answer-button:hover {
     background-color: var(--button-primary-color);
 }
+
+
+
+.question {
+    border: solid 1px var(--secondary-dark-color);
+    padding: 20px;
+    width: 800px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.quizdata {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    justify-content: center;
+    font-size: 30px;
+    height: 100px;
+}
+
+.timer {
+
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(152, 91, 152);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.streak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+

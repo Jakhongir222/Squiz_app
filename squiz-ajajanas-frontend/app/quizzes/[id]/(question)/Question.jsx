@@ -54,11 +54,13 @@ function Question( {currentQuestion, goToNextQuestion, streak, score} ) {
   }
 
   return (
-    <div>
+    <div className='questionbody'>
       <div className='question'>{currentQuestion.question}</div>
-      <div className='timer'>{countdown}</div>
-      <div className='streak'>Current streak: {streak}</div>
-      <div className='score'>Current score: {score}</div>
+        <div className='quizdata'>
+          <div className='timer'>{countdown}</div>
+          <div className='streak'>Current streak: {streak}</div>
+          <div className='score'>Current score: {score}</div>
+        </div>
       {/* <QuestionImage query={currentQuestion.wrongAnswers[0].answer}/> */}
       <div className='answer'>{shuffledAnswers.map((answer, index) => {
         return (
