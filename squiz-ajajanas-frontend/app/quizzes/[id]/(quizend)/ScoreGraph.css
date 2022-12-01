@@ -1,18 +1,21 @@
 .bar-graph {
   display: flex;
   flex-direction: row;
-  background-color: darkgray;
+  background-color: var(--secondary-dark-color);
   align-items: flex-end;
   width: 70vw;
   height: 20vh;
   gap: 0.5vw;
   padding: 20px 10px 0px;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .score-col {
   position: relative;
   border-bottom: solid;
-  background: yellowgreen;
+  background: var(--button-primary-color);
   width: 100%;
 }
 
@@ -21,13 +24,13 @@
   position: absolute;
   translate: 0% -120%;
   font-size: 20px;
-  background: gray;
+  background: var(--button-secondary-color);
   padding: 5px;
   border: solid;
 }
 
 .quiz-finish {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   border: 2px solid var(--button-secondary-color);
@@ -35,26 +38,31 @@
   border-radius: 10px;
   background-color: var(--secondary-dark-color);
 
+
 }
 
 .score-finish {
   justify-content: center;
   display: flex;
   margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 2px solid var(--button-secondary-color);
+  background-color: var(--secondary-dark-color);
+  box-shadow: 20px;
+  padding: 6px;
+  border-radius: 10px;
+
 }
 
 .score-result {
-  display: flex;
   border-radius: 10px;
-  border: 2px solid black;
-  margin-left: 10px;
-  background-color: var(--secondary-dark-color);
-  padding: 6px;
-
-
+  justify-content: center;
 }
 
 .bar-score {
   display: flex;
-  margin: 10px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }

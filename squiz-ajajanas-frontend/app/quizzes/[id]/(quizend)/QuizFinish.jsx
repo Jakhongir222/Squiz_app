@@ -41,9 +41,9 @@ function QuizFinish({ props }) {
     <div className='quizfinish'>
       <div className='quiz-finish'>The quiz is Over!</div>
       <Timeline props={props} />
+      <div style={{ height: '20vh' }} />
       <ScoreGraph props={scoreGraphProps} />
-      <a className='link' href="/quizzes"> Another test? </a>
-
+      <a href="/quizzes"> Another test? </a>
       {/*
       <div>Completed! Your score {scores[scores.length-1]}</div>
       <div>Highest Streak: {highestStreak}</div>

@@ -6,9 +6,8 @@
   gap: 10px;
 }
 
-.link {
+.link-another-test {
   justify-content: center;
-  margin: 10px;
+  margin: 30px;
   align-items: center;
-  display: flex;
 }
