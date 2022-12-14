@@ -27,5 +27,6 @@ The project is a Full-Stack application. Technologies used include;
 * VSCode
 * Figma
 
-# Coming!
-This is how the final project was by end of December 2nd, 2022. Check the individual repos for future changes that each dev might have done to the project.
+# Coming soon!
+This is how the final project was by end of December 2nd, 2022. 
+Check the individual repos for future changes that each dev might have done to the project.
