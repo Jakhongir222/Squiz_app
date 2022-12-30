@@ -1,7 +1,7 @@
 
 # Final Project at SALT Full-Stack Java Bootcamp autumn 2022
 
-This project is the final project of mob group Ajajanas (Jakhongir, Jagoda, Nantia, Asbjørn). Additional Salt Bootcamp info: https://www.salt.study/our-hubs/Stockholm
+This project is the final project of mob group Ajajanas (Jakhongir, Jagoda, Nantia, Asbjørn). Checkout our app here: https://squiz-ajajanas-final-project-3agl.vercel.app/profile
 
 # Squiz App
 We build  a quiz app to keep people entertained and att the same time educate them in a fun way. We chose very interesting and axciting categories to accomadate our user's taste. Our app is easy to use to the wide range of age groups and our design will provide positevely effects and pleasent experience.
